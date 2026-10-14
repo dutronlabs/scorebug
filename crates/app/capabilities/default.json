@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Ticker and grid windows: receive frames, ask for the current state.",
+  "windows": ["ticker", "grid"],
+  "permissions": ["core:default"]
+}

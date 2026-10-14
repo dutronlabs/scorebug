@@ -94,7 +94,7 @@ export class Grid {
     c.el.replaceChildren(
       h("header", null, status(g), noGoal ? h("span.nogoal", null, "NO GOAL") : null),
       h("div.rows", null, teamRow(g, "away", true), teamRow(g, "home", true)),
-      h("footer", null, last ? lastGoalLine(g, last) : null),
+      h("footer", null, lastGoalLine(g, last)),
       ...overlays,
     );
     c.el.querySelectorAll(".rows .score").forEach((e, i) => {
@@ -140,6 +140,12 @@ export class Grid {
   }
 }
 
-function lastGoalLine(g: GameSnapshot, goal: GoalRecord): HTMLElement {
-  return h("div.last", { style: teamVars(g[goal.side].team.color) }, h("i.chip"), scorerLine(goal.detail));
+/** Latest goal: from events if we saw it happen, else the snapshot's plays
+ * (a game that was already underway or over when we connected). */
+function lastGoalLine(g: GameSnapshot, goal: GoalRecord | undefined): HTMLElement | null {
+  const play = g.scoring_plays?.at(-1);
+  const side = goal?.side ?? play?.side;
+  if (!side) return null;
+  const detail = goal ? goal.detail : play;
+  return h("div.last", { style: teamVars(g[side].team.color) }, h("i.chip"), scorerLine(detail));
 }

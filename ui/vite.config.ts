@@ -46,4 +46,6 @@ function simEndpoint(): Plugin {
 
 export default defineConfig({
   plugins: [simEndpoint()],
+  // The desktop app loads this URL in dev (crates/app/tauri.conf.json).
+  server: { port: 5173, strictPort: true },
 });

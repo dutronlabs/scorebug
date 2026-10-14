@@ -18,8 +18,8 @@ downstream can be built and tested without a live game.
 |---|---|
 | `scorebug-core` | model (`GameSnapshot`, ...), `Tracker`, `GameEvent`. No I/O. |
 | `scorebug-sim` | deterministic accelerated NHL night; `scorebug-sim` prints NDJSON frames |
-| `providers` (planned) | ESPN NHL scoreboard behind a `ScoreProvider` trait |
-| `app` (planned) | Tauri shell: overlay window, grid window, tray, config |
+| `scorebug-providers` | `ScoreProvider` trait; ESPN NHL (scoreboard + per-game summary) |
+| `scorebug-app` (`crates/app`) | Tauri 2 shell: feed thread, ticker overlay, grid window, tray |
 | `ui/` | web front end: ticker + grid views (Vite + TypeScript, no framework) |
 
 ## Event rules (implemented in `Tracker`)
@@ -66,23 +66,65 @@ downstream can be built and tested without a live game.
   production build has no data source until the Tauri shell provides one
   (phase 3).
 
-## Linux / NVIDIA / X11
+## Linux / NVIDIA / Wayland
 
 - Tauri uses WebKitGTK. Set `WEBKIT_DISABLE_DMABUF_RENDERER=1` at startup for
   the proprietary NVIDIA driver; do not disable compositing.
-- X11: transparent, borderless, always-on-top, optionally click-through; needs
-  a compositor.
+- Wayland lets a client neither position its window nor keep it on top, so
+  the app always runs through XWayland (`GDK_BACKEND=x11`). It overrides the
+  inherited value because COSMIC exports `GDK_BACKEND=wayland,x11`
+  session-wide. `SCOREBUG_GDK_BACKEND` overrides that.
+- COSMIC's X window manager clamps a managed window to about 2/3 of the
+  screen and centers it, even for `_NET_WM_WINDOW_TYPE_DOCK`. The ticker is
+  therefore an **override-redirect** window: unmanaged, placed exactly, and
+  stacked above managed windows. It is also never `resizable(false)`, because
+  GTK then sizes it to the webview's natural 200px.
+- Click-through (`set_ignore_cursor_events`) only works on a shown window
+  (tao unwraps the GDK window), so it is applied after every show.
+- Verified on the target machine (COSMIC, 5120x1440 at scale 1, RTX 5060 Ti,
+  driver 580): the ticker shows at 5120x88+0+1352, above other windows, and
+  the grid opens as a normal window.
 
 ## Data source
 
-ESPN's unofficial NHL scoreboard (`site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard`).
-The provider model must be written against a **captured real response**
-(stored as a test fixture), not from memory. `api-web.nhle.com` is the
-fallback/second provider.
+ESPN's unofficial NHL API (`site.api.espn.com/apis/site/v2/sports/hockey/nhl`).
+The provider is written against captured responses in
+`crates/providers/tests/fixtures/espn/`. What they showed:
+
+- `scoreboard` has state, period, clock and score, but **no scoring plays**.
+  Scorers come only from `summary?event=<id>`: `plays[]` with
+  `scoringPlay: true`.
+- A shootout winner's `score` includes one bonus goal (period 5, `SO`).
+  Shootout attempts are scoring plays with `period.displayValue == "SO"` /
+  `shotInfo.id == "905"`, and the provider drops them. `shootout` is set
+  from period >= 5 outside the postseason.
+- An empty-net goal has `strength: empty-net` in place of its manpower
+  strength.
+- Fetch policy: a summary is fetched when a game first has goals, when its
+  score moves, while it has goals without scorers, every 30s while live, and
+  once more after it goes final.
+- A game with goals is **held back** until its summary loads once. The
+  tracker's silent baseline then owns its earlier scorers. Otherwise they
+  would look new and be pinned to the next goal.
+- Not yet captured: a game **in progress** or **in intermission**.
+  Intermission is inferred from `state == "in"` with a zero clock. Run
+  `cargo run -p scorebug-providers --example record` during a live night to
+  capture fixtures and check the mapping.
+
+`api-web.nhle.com` is the planned fallback/second provider.
+
+## App
+
+- The feed thread polls (ESPN every 5s, with backoff on errors) or plays
+  simulated nights in real time (`--sim`), runs the tracker, and emits
+  `frame` events shaped like the simulator's NDJSON. A window that loads asks
+  for `current_frame` and applies it as a catch-up (no alerts).
+- The window label (`ticker` / `grid`) picks the view. Closing the grid hides
+  it; the tray shows the grid, toggles the ticker and click-through, and quits.
 
 ## Status
 
 - [x] Phase 1: core model, tracker, simulator, tests
 - [x] Phase 2: web UI against simulator output (ticker, goal slate, grid)
-- [ ] Phase 3: ESPN provider, Tauri shell
+- [x] Phase 3: ESPN provider, Tauri shell
 - [ ] Phase 4: hardening on the target machine, sound, scorer late-binding polish

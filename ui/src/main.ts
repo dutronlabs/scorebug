@@ -5,15 +5,21 @@ import "./styles.css";
 
 import { h } from "./dom";
 import { Grid } from "./grid";
-import { loadSim, Replay } from "./source";
+import { isTauri } from "@tauri-apps/api/core";
+import { getCurrentWindow } from "@tauri-apps/api/window";
+
+import { connectTauri, loadSim, Replay } from "./source";
 import { Scoreboard } from "./store";
 import { Ticker } from "./ticker";
+import type { Frame } from "./types";
 
-// `?view=ticker|grid|both` (default both, with dev controls).
-// `?seed=N&games=N` pick the simulated night, `?warp=N` game seconds per real
-// second, `?at=S` starts S real seconds into the replay.
+// In the desktop app the window label picks the view and frames come from the
+// Rust feed. In a browser: `?view=ticker|grid|both` (default both, with dev
+// controls), `?seed=N&games=N` pick the simulated night, `?warp=N` game
+// seconds per real second, `?at=S` starts S real seconds into the replay.
+const tauri = isTauri();
 const q = new URLSearchParams(location.search);
-const view = q.get("view") ?? "both";
+const view = tauri ? getCurrentWindow().label : (q.get("view") ?? "both");
 const seed = Number(q.get("seed") ?? 1);
 const games = Number(q.get("games") ?? 16);
 const SIM_WARP = 30;
@@ -29,31 +35,34 @@ const app = document.getElementById("app")!;
 if (grid) app.append(h("main.grid-wrap", null, grid.el));
 if (ticker) app.append(ticker.el);
 
-const frames = await loadSim(seed, games).catch((e: Error) => {
-  app.append(h("pre.error", null, e.message));
-  throw e;
-});
+const apply = (f: Frame, catchUp: boolean) => {
+  const notices = board.apply(f);
+  ticker?.handle(notices, catchUp);
+  grid?.handle(notices, catchUp);
+};
+const reset = () => {
+  board.reset();
+  ticker?.reset();
+  grid?.reset();
+};
 
-const replay = new Replay(
-  frames,
-  (f, catchUp) => {
-    const notices = board.apply(f);
-    ticker?.handle(notices, catchUp);
-    grid?.handle(notices, catchUp);
-  },
-  () => {
-    board.reset();
-    ticker?.reset();
-    grid?.reset();
-  },
-);
-replay.speed = warp / SIM_WARP;
-replay.seek(Number(q.get("at") ?? 0) * 1000);
-replay.play();
+let replay: Replay | null = null;
+if (tauri) {
+  await connectTauri(apply, reset);
+} else {
+  const frames = await loadSim(seed, games).catch((e: Error) => {
+    app.append(h("pre.error", null, e.message));
+    throw e;
+  });
+  replay = new Replay(frames, apply, reset);
+  replay.speed = warp / SIM_WARP;
+  replay.seek(Number(q.get("at") ?? 0) * 1000);
+  replay.play();
+}
 
-if (view === "both") app.prepend(controls());
+if (replay && view === "both") app.prepend(controls(replay));
 
-function controls(): HTMLElement {
+function controls(replay: Replay): HTMLElement {
   const play = h("button", { type: "button" }, "Pause");
   play.onclick = () => {
     if (replay.playing) replay.pause();

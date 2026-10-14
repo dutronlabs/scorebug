@@ -110,7 +110,9 @@ export class Ticker {
 
   private showPage(advance: boolean): void {
     this.mode = "pages";
-    const pages = paginate(this.board.byPriority(), this.perPage());
+    const per = this.perPage();
+    this.stage.style.setProperty("--per-page", `${per}`);
+    const pages = paginate(this.board.byPriority(), per);
     if (advance) this.page++;
     if (this.page >= pages.length) this.page = 0;
     const games = pages[this.page] ?? [];

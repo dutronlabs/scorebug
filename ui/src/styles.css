@@ -317,7 +317,8 @@ html[data-view="both"] body {
 }
 
 .cell {
-  flex: 1 1 0;
+  /* Fixed width, so a short last page doesn't stretch its cells. */
+  flex: 0 0 calc(100% / var(--per-page, 4));
   min-width: 0;
   display: flex;
   align-items: center;

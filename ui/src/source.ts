@@ -78,3 +78,18 @@ export class Replay {
     }
   }
 }
+
+/**
+ * Inside the desktop app: frames come from the Rust feed as `frame` events.
+ * Listens first, then asks for the current state, which is applied as a
+ * catch-up frame (state only, no alerts).
+ */
+export async function connectTauri(
+  onFrame: (f: Frame, catchUp: boolean) => void,
+  onReset: () => void,
+): Promise<void> {
+  const [{ invoke }, { listen }] = await Promise.all([import("@tauri-apps/api/core"), import("@tauri-apps/api/event")]);
+  await listen<Frame>("frame", (e) => onFrame(e.payload, false));
+  await listen("reset", () => onReset());
+  onFrame(await invoke<Frame>("current_frame"), true);
+}
