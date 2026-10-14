@@ -15,3 +15,14 @@ See [docs/design.md](docs/design.md) for the design and current status.
 cargo test                                   # core + simulator invariants
 cargo run -p scorebug-sim -- --games 16      # a simulated 16-game night as NDJSON
 ```
+
+## Try the UI
+
+```sh
+cd ui && npm install && npm run dev          # http://localhost:5173
+```
+
+The default page plays a simulated night with the grid and ticker together, and
+has playback controls. `?view=ticker` and `?view=grid` show each window on
+its own. `?seed=N`, `?warp=N` (game seconds per real second) and `?at=S` (start
+S seconds in) pick the night.
