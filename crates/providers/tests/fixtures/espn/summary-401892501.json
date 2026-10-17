@@ -1,0 +1,626 @@
+{
+ "header": {
+  "id": "401892501",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892501000000530",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T05:12Z",
+   "wallclock": "2026-10-14T01:53:13Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000000520",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Mikael Backlund faceoff won against Mikael Granlund",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "3"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3797",
+      "displayName": "Mikael Backlund",
+      "shortName": "M. Backlund",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3797.png",
+       "alt": "Mikael Backlund"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "5831",
+      "displayName": "Mikael Granlund",
+      "shortName": "M. Granlund",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5831.png",
+       "alt": "Mikael Granlund"
+      }
+     },
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T01:53:13Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000000550",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "507",
+    "text": "Missed",
+    "abbreviation": "shot-missed"
+   },
+   "text": "Joel Farabee Tip-In Wide Left",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:06"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "3"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4352750",
+      "displayName": "Joel Farabee",
+      "shortName": "J. Farabee",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4352750.png",
+       "alt": "Joel Farabee"
+      }
+     },
+     "type": "shooter",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "4588165",
+      "displayName": "Lukas Dostal",
+      "shortName": "L. Dostal",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4588165.png",
+       "alt": "Lukas Dostal"
+      }
+     },
+     "ytdAssists": 0
+    }
+   ],
+   "wallclock": "2026-10-14T01:53:19Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": -68,
+    "y": -10
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000002210",
+   "sequenceNumber": "41",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Adam Klapka Goal (2) Snap Shot, assists: Maksim Tsyplakov (1)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "8:32"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "3"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5073306",
+      "displayName": "Adam Klapka",
+      "shortName": "A. Klapka",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5073306.png",
+       "alt": "Adam Klapka"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5212753",
+      "displayName": "Maxim Tsyplakov",
+      "shortName": "M. Tsyplakov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5212753.png",
+       "alt": "Maxim Tsyplakov"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T02:07:06Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -46,
+    "y": -3
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000002720",
+   "sequenceNumber": "60",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Beckett Sennecke Goal (4) Wrist Shot, assists: none",
+   "awayScore": 1,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "12:09"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "25"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5216858",
+      "displayName": "Beckett Sennecke",
+      "shortName": "B. Sennecke",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5216858.png",
+       "alt": "Beckett Sennecke"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    }
+   ],
+   "wallclock": "2026-10-14T02:16:33Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 77,
+    "y": 0
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000002990",
+   "sequenceNumber": "68",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Leo Carlsson Goal (2) Snap Shot, assists: Mikael Granlund (6), Judd Caulfield (2)",
+   "awayScore": 1,
+   "homeScore": 2,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "14:05"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "25"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5149153",
+      "displayName": "Leo Carlsson",
+      "shortName": "L. Carlsson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5149153.png",
+       "alt": "Leo Carlsson"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5831",
+      "displayName": "Mikael Granlund",
+      "shortName": "M. Granlund",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5831.png",
+       "alt": "Mikael Granlund"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    },
+    {
+     "athlete": {
+      "id": "4755684",
+      "displayName": "Judd Caulfield",
+      "shortName": "J. Caulfield",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4755684.png",
+       "alt": "Judd Caulfield"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T02:20:00Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 68,
+    "y": -17
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892501000006270",
+   "sequenceNumber": "148",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Aydar Suniev Goal (2) Snap Shot, assists: Ryan Strome (2), Simon Nemec (2)",
+   "awayScore": 2,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "8:02"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "3"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5188613",
+      "displayName": "Aydar Suniev",
+      "shortName": "A. Suniev",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5188613.png",
+       "alt": "Aydar Suniev"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "2562636",
+      "displayName": "Ryan Strome",
+      "shortName": "R. Strome",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2562636.png",
+       "alt": "Ryan Strome"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4915344",
+      "displayName": "Simon Nemec",
+      "shortName": "S. Nemec",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4915344.png",
+       "alt": "Simon Nemec"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T03:03:40Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 67,
+    "y": -6
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000010300",
+   "sequenceNumber": "315",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Martin Pospisil Goal (1) Snap Shot, assists: Aydar Suniev (1), Yan Kuznetsov (1)",
+   "awayScore": 3,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "15:38"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "3"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4392883",
+      "displayName": "Martin Pospisil",
+      "shortName": "M. Pospisil",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4392883.png",
+       "alt": "Martin Pospisil"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "5188613",
+      "displayName": "Aydar Suniev",
+      "shortName": "A. Suniev",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5188613.png",
+       "alt": "Aydar Suniev"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4697453",
+      "displayName": "Yan Kuznetsov",
+      "shortName": "Y. Kuznetsov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697453.png",
+       "alt": "Yan Kuznetsov"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T04:15:01Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -73,
+    "y": -21
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892501000010810",
+   "sequenceNumber": "335",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Yegor Sharangovich Goal (1) Wrist Shot, assists: Mikael Backlund (1), Joel Farabee (4)",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "18:38"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:12Z",
+   "team": {
+    "id": "3"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4587843",
+      "displayName": "Yegor Sharangovich",
+      "shortName": "Y. Sharangovich",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4587843.png",
+       "alt": "Yegor Sharangovich"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3797",
+      "displayName": "Mikael Backlund",
+      "shortName": "M. Backlund",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3797.png",
+       "alt": "Mikael Backlund"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4352750",
+      "displayName": "Joel Farabee",
+      "shortName": "J. Farabee",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4352750.png",
+       "alt": "Joel Farabee"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-14T04:22:46Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   },
+   "coordinate": {
+    "x": -62,
+    "y": -11
+   },
+   "strength": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   }
+  }
+ ]
+}

@@ -1,0 +1,584 @@
+{
+ "header": {
+  "id": "401892493",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892493000000520",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T23:23Z",
+   "wallclock": "2026-10-13T23:23:25Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000000510",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Mika Zibanejad faceoff won against Zemgus Girgensons",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T23:23Z",
+   "team": {
+    "id": "13"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2562637",
+      "displayName": "Mika Zibanejad",
+      "shortName": "M. Zibanejad",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2562637.png",
+       "alt": "Mika Zibanejad"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "2968829",
+      "displayName": "Zemgus Girgensons",
+      "shortName": "Z. Girgensons",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2968829.png",
+       "alt": "Zemgus Girgensons"
+      }
+     },
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T23:23:25Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000000550",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "506",
+    "text": "Shot",
+    "abbreviation": "shot-on-goal"
+   },
+   "text": "Ryan McDonagh Slap Shot saved by Dylan Garand",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:13"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T23:25Z",
+   "team": {
+    "id": "20"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4954",
+      "displayName": "Ryan McDonagh",
+      "shortName": "R. McDonagh",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4954.png",
+       "alt": "Ryan McDonagh"
+      }
+     },
+     "type": "shooter",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "4697705",
+      "displayName": "Dylan Garand",
+      "shortName": "D. Garand",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697705.png",
+       "alt": "Dylan Garand"
+      }
+     },
+     "type": "saver",
+     "ytdAssists": 0
+    }
+   ],
+   "wallclock": "2026-10-13T23:23:38Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": 27,
+    "y": 23
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000000640",
+   "sequenceNumber": "11",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Alexis Lafrenière Goal (6) Wrist Shot, assists: Tye Kartye (3), Adam Fox (7)",
+   "awayScore": 0,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "1:02"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-13T23:27Z",
+   "team": {
+    "id": "13"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4697382",
+      "displayName": "Alexis Lafreniere",
+      "shortName": "A. Lafreniere",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697382.png",
+       "alt": "Alexis Lafreniere"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 6
+    },
+    {
+     "athlete": {
+      "id": "4588750",
+      "displayName": "Tye Kartye",
+      "shortName": "T. Kartye",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4588750.png",
+       "alt": "Tye Kartye"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "4197146",
+      "displayName": "Adam Fox",
+      "shortName": "A. Fox",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4197146.png",
+       "alt": "Adam Fox"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 7
+    }
+   ],
+   "wallclock": "2026-10-13T23:24:52Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -76,
+    "y": 1
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000002310",
+   "sequenceNumber": "62",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Alexis Lafrenière Goal (7) Wrist Shot, assists: Tye Kartye (4), J.T. Miller (5)",
+   "awayScore": 0,
+   "homeScore": 2,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "12:47"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:55Z",
+   "team": {
+    "id": "13"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4697382",
+      "displayName": "Alexis Lafreniere",
+      "shortName": "A. Lafreniere",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697382.png",
+       "alt": "Alexis Lafreniere"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 7
+    },
+    {
+     "athlete": {
+      "id": "4588750",
+      "displayName": "Tye Kartye",
+      "shortName": "T. Kartye",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4588750.png",
+       "alt": "Tye Kartye"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    },
+    {
+     "athlete": {
+      "id": "2590852",
+      "displayName": "J.T. Miller",
+      "shortName": "J.T. Miller",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2590852.png",
+       "alt": "J.T. Miller"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-13T23:48:44Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -70,
+    "y": -5
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000004010",
+   "sequenceNumber": "86",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Zemgus Girgensons Goal (1) Wrist Shot, assists: Pontus Holmberg (2), Victor Hedman (2)",
+   "awayScore": 1,
+   "homeScore": 2,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "17:26"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T00:06Z",
+   "team": {
+    "id": "20"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2968829",
+      "displayName": "Zemgus Girgensons",
+      "shortName": "Z. Girgensons",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2968829.png",
+       "alt": "Zemgus Girgensons"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4588205",
+      "displayName": "Pontus Holmberg",
+      "shortName": "P. Holmberg",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4588205.png",
+       "alt": "Pontus Holmberg"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "5157",
+      "displayName": "Victor Hedman",
+      "shortName": "V. Hedman",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5157.png",
+       "alt": "Victor Hedman"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-13T23:59:45Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 72,
+    "y": -11
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000007540",
+   "sequenceNumber": "205",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Will Cuylle Goal (3) Tip-In, assists: Sean Durzi (2), Marcus Pettersson (1)",
+   "awayScore": 1,
+   "homeScore": 3,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "18:26"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:01Z",
+   "team": {
+    "id": "13"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4697468",
+      "displayName": "Will Cuylle",
+      "shortName": "W. Cuylle",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697468.png",
+       "alt": "Will Cuylle"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "4378683",
+      "displayName": "Sean Durzi",
+      "shortName": "S. Durzi",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4378683.png",
+       "alt": "Sean Durzi"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "3114995",
+      "displayName": "Marcus Pettersson",
+      "shortName": "M. Pettersson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114995.png",
+       "alt": "Marcus Pettersson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T00:54:36Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 70,
+    "y": 0
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892493000010740",
+   "sequenceNumber": "300",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Mika Zibanejad Goal (2) Wrist Shot, assists: Adam Fox (8), Marcus Pettersson (2)",
+   "awayScore": 1,
+   "homeScore": 4,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "17:16"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:13Z",
+   "team": {
+    "id": "13"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2562637",
+      "displayName": "Mika Zibanejad",
+      "shortName": "M. Zibanejad",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2562637.png",
+       "alt": "Mika Zibanejad"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4197146",
+      "displayName": "Adam Fox",
+      "shortName": "A. Fox",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4197146.png",
+       "alt": "Adam Fox"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 8
+    },
+    {
+     "athlete": {
+      "id": "3114995",
+      "displayName": "Marcus Pettersson",
+      "shortName": "M. Pettersson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114995.png",
+       "alt": "Marcus Pettersson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T01:50:31Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   },
+   "coordinate": {
+    "x": -25,
+    "y": 34
+   },
+   "strength": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   }
+  }
+ ]
+}

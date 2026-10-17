@@ -1,0 +1,912 @@
+{
+ "header": {
+  "id": "401892494",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892494000000540",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T23:38Z",
+   "wallclock": "2026-10-13T23:38:09Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000000530",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Pius Suter faceoff won against Ridly Greig",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T23:38Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4271732",
+      "displayName": "Pius Suter",
+      "shortName": "P. Suter",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4271732.png",
+       "alt": "Pius Suter"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4697411",
+      "displayName": "Ridly Greig",
+      "shortName": "R. Greig",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697411.png",
+       "alt": "Ridly Greig"
+      }
+     },
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T23:38:09Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000000760",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "503",
+    "text": "Hit",
+    "abbreviation": "hit"
+   },
+   "text": "Dylan Peterson hit Andre Burakovsky",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:07"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T23:39Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4781712",
+      "displayName": "Dylan Peterson",
+      "shortName": "D. Peterson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4781712.png",
+       "alt": "Dylan Peterson"
+      }
+     },
+     "type": "hit-credited",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "3042044",
+      "displayName": "Andre Burakovsky",
+      "shortName": "A. Burakovsky",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042044.png",
+       "alt": "Andre Burakovsky"
+      }
+     },
+     "type": "hitted",
+     "ytdAssists": 0
+    }
+   ],
+   "wallclock": "2026-10-13T23:38:16Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": 27,
+    "y": 40
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000003450",
+   "sequenceNumber": "66",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Pius Suter Goal (2) Snap Shot, assists: Colton Parayko (3), Pavel Buchnevich (2)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "14:28"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T00:03Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4271732",
+      "displayName": "Pius Suter",
+      "shortName": "P. Suter",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4271732.png",
+       "alt": "Pius Suter"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "3069341",
+      "displayName": "Colton Parayko",
+      "shortName": "C. Parayko",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3069341.png",
+       "alt": "Colton Parayko"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "3042081",
+      "displayName": "Pavel Buchnevich",
+      "shortName": "P. Buchnevich",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042081.png",
+       "alt": "Pavel Buchnevich"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T00:01:40Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -62,
+    "y": -5
+   },
+   "strength": {
+    "id": "703",
+    "text": "Shorthanded",
+    "abbreviation": "short-handed"
+   }
+  },
+  {
+   "id": "401892494000006990",
+   "sequenceNumber": "153",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Jake Neighbours Goal (2) Wrist Shot, assists: Robert Thomas (2), Dylan Holloway (4)",
+   "awayScore": 2,
+   "homeScore": 0,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "13:20"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:02Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4697409",
+      "displayName": "Jake Neighbours",
+      "shortName": "J. Neighbours",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697409.png",
+       "alt": "Jake Neighbours"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4233637",
+      "displayName": "Robert Thomas",
+      "shortName": "R. Thomas",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233637.png",
+       "alt": "Robert Thomas"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4697397",
+      "displayName": "Dylan Holloway",
+      "shortName": "D. Holloway",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697397.png",
+       "alt": "Dylan Holloway"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-14T00:53:18Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 46,
+    "y": 7
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000007550",
+   "sequenceNumber": "172",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Claude Giroux Goal (1) Wrist Shot, assists: Tim Stützle (6), Drake Batherson (2)",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "17:52"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:10Z",
+   "team": {
+    "id": "14"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3775",
+      "displayName": "Claude Giroux",
+      "shortName": "C. Giroux",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3775.png",
+       "alt": "Claude Giroux"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4697384",
+      "displayName": "Tim Stutzle",
+      "shortName": "T. Stutzle",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697384.png",
+       "alt": "Tim Stutzle"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    },
+    {
+     "athlete": {
+      "id": "4271734",
+      "displayName": "Drake Batherson",
+      "shortName": "D. Batherson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4271734.png",
+       "alt": "Drake Batherson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T01:04:10Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -69,
+    "y": 11
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000007600",
+   "sequenceNumber": "175",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Mason McTavish Goal (3) Backhand, assists: Jonatan Berggren (2), Connor McMichael (3)",
+   "awayScore": 3,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "18:25"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:09Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874718",
+      "displayName": "Mason McTavish",
+      "shortName": "M. McTavish",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874718.png",
+       "alt": "Mason McTavish"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "4378660",
+      "displayName": "Jonatan Berggren",
+      "shortName": "J. Berggren",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4378660.png",
+       "alt": "Jonatan Berggren"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4565246",
+      "displayName": "Connor McMichael",
+      "shortName": "C. McMichael",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565246.png",
+       "alt": "Connor McMichael"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T01:05:35Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 80,
+    "y": 1
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000009050",
+   "sequenceNumber": "234",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Pius Suter Goal (3) Slap Shot, assists: Ross Johnston (1), Brandon Carlo (1)",
+   "awayScore": 4,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "7:54"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:43Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4271732",
+      "displayName": "Pius Suter",
+      "shortName": "P. Suter",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4271732.png",
+       "alt": "Pius Suter"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "3067822",
+      "displayName": "Ross Johnston",
+      "shortName": "R. Johnston",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3067822.png",
+       "alt": "Ross Johnston"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "3904175",
+      "displayName": "Brandon Carlo",
+      "shortName": "B. Carlo",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3904175.png",
+       "alt": "Brandon Carlo"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T01:40:49Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -81,
+    "y": -25
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000009960",
+   "sequenceNumber": "263",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Jake Neighbours Goal (3) Snap Shot, assists: Pavel Buchnevich (3), Cam Fowler (1)",
+   "awayScore": 5,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "14:46"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:01Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4697409",
+      "displayName": "Jake Neighbours",
+      "shortName": "J. Neighbours",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697409.png",
+       "alt": "Jake Neighbours"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "3042081",
+      "displayName": "Pavel Buchnevich",
+      "shortName": "P. Buchnevich",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042081.png",
+       "alt": "Pavel Buchnevich"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "5495",
+      "displayName": "Cam Fowler",
+      "shortName": "C. Fowler",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5495.png",
+       "alt": "Cam Fowler"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T01:55:27Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -78,
+    "y": 8
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000010200",
+   "sequenceNumber": "271",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Mason McTavish Goal (4) Snap Shot, assists: Connor McMichael (4), Pavel Buchnevich (4)",
+   "awayScore": 6,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "15:33"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:03Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874718",
+      "displayName": "Mason McTavish",
+      "shortName": "M. McTavish",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874718.png",
+       "alt": "Mason McTavish"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "4565246",
+      "displayName": "Connor McMichael",
+      "shortName": "C. McMichael",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565246.png",
+       "alt": "Connor McMichael"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    },
+    {
+     "athlete": {
+      "id": "3042081",
+      "displayName": "Pavel Buchnevich",
+      "shortName": "P. Buchnevich",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042081.png",
+       "alt": "Pavel Buchnevich"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-14T02:00:44Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -60,
+    "y": 22
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892494000010360",
+   "sequenceNumber": "279",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Adam Jiricek Goal (1) Snap Shot, assists: Pius Suter (2), Mason McTavish (3)",
+   "awayScore": 7,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "16:32"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:06Z",
+   "team": {
+    "id": "19"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5216884",
+      "displayName": "Adam Jiricek",
+      "shortName": "A. Jiricek",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5216884.png",
+       "alt": "Adam Jiricek"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4271732",
+      "displayName": "Pius Suter",
+      "shortName": "P. Suter",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4271732.png",
+       "alt": "Pius Suter"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4874718",
+      "displayName": "Mason McTavish",
+      "shortName": "M. McTavish",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874718.png",
+       "alt": "Mason McTavish"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T02:03:00Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -47,
+    "y": 20
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892494000010650",
+   "sequenceNumber": "290",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Fabian Zetterlund Goal (1) Wrist Shot, assists: Stephen Halliday (1), Shane Pinto (5)",
+   "awayScore": 7,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "18:33"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:10Z",
+   "team": {
+    "id": "14"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4587837",
+      "displayName": "Fabian Zetterlund",
+      "shortName": "F. Zetterlund",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4587837.png",
+       "alt": "Fabian Zetterlund"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "5136706",
+      "displayName": "Stephen Halliday",
+      "shortName": "S. Halliday",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5136706.png",
+       "alt": "Stephen Halliday"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4565255",
+      "displayName": "Shane Pinto",
+      "shortName": "S. Pinto",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565255.png",
+       "alt": "Shane Pinto"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T02:06:52Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 71,
+    "y": -6
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  }
+ ]
+}

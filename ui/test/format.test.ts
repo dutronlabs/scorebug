@@ -1,0 +1,31 @@
+import { describe, expect, it } from "vitest";
+import { statusLine } from "../src/format";
+import type { GameSnapshot } from "../src/types";
+
+const g = (over: Partial<GameSnapshot>): GameSnapshot => ({
+  id: "g",
+  sport: "hockey",
+  state: "live",
+  period: 2,
+  clock: "8:41",
+  home: { team: { id: "H", abbr: "H", name: "H" }, score: 0 },
+  away: { team: { id: "A", abbr: "A", name: "A" }, score: 0 },
+  shootout: false,
+  ...over,
+});
+
+// Same cases as `status_line` in crates/core.
+describe("statusLine", () => {
+  it.each([
+    [{}, "2nd 8:41"],
+    [{ state: "intermission" }, "End 2nd"],
+    [{ state: "final", period: 3 }, "FINAL"],
+    [{ state: "final", period: 4 }, "FINAL/OT"],
+    [{ state: "final", period: 5 }, "FINAL/2OT"],
+    [{ state: "final", period: 5, shootout: true }, "FINAL/SO"],
+    [{ state: "live", period: 5, shootout: true }, "SO"],
+    [{ state: "postponed" }, "POSTPONED"],
+  ] as [Partial<GameSnapshot>, string][])("%o -> %s", (over, want) => {
+    expect(statusLine(g(over))).toBe(want);
+  });
+});

@@ -1,0 +1,691 @@
+{
+ "header": {
+  "id": "401892499",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892499000000520",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T01:49Z",
+   "wallclock": "2026-10-14T00:54:20Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000000510",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Jack Eichel faceoff won against Ryan O'Reilly",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T01:49Z",
+   "team": {
+    "id": "37"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3648002",
+      "displayName": "Jack Eichel",
+      "shortName": "J. Eichel",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3648002.png",
+       "alt": "Jack Eichel"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "5208",
+      "displayName": "Ryan O'Reilly",
+      "shortName": "R. O'Reilly",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5208.png",
+       "alt": "Ryan O'Reilly"
+      }
+     },
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T00:54:20Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000000080",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "516",
+    "text": "Stoppage",
+    "abbreviation": "stoppage"
+   },
+   "text": "Off-side",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:35"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T01:49Z",
+   "wallclock": "2026-10-14T00:54:56Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": -35,
+    "y": -33
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000001040",
+   "sequenceNumber": "28",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Ryan O'Reilly Goal (2) Backhand, assists: Filip Forsberg (5)",
+   "awayScore": 0,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "3:55"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "27"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5208",
+      "displayName": "Ryan O'Reilly",
+      "shortName": "R. O'Reilly",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5208.png",
+       "alt": "Ryan O'Reilly"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "2968772",
+      "displayName": "Filip Forsberg",
+      "shortName": "F. Forsberg",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2968772.png",
+       "alt": "Filip Forsberg"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T01:00:23Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 83,
+    "y": -5
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000001400",
+   "sequenceNumber": "43",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Tomas Hertl Goal (4) Wrist Shot, assists: Raphael Lavoie (2), Brett Howden (3)",
+   "awayScore": 1,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "6:46"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "37"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2976844",
+      "displayName": "Tomas Hertl",
+      "shortName": "T. Hertl",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2976844.png",
+       "alt": "Tomas Hertl"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "4565261",
+      "displayName": "Raphael Lavoie",
+      "shortName": "R. Lavoie",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565261.png",
+       "alt": "Raphael Lavoie"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4024989",
+      "displayName": "Brett Howden",
+      "shortName": "B. Howden",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024989.png",
+       "alt": "Brett Howden"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T01:05:28Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -62,
+    "y": -16
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000002730",
+   "sequenceNumber": "74",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Jack Eichel Goal (4) Tip-In, assists: Brayden McNabb (5)",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "12:48"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "37"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3648002",
+      "displayName": "Jack Eichel",
+      "shortName": "J. Eichel",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3648002.png",
+       "alt": "Jack Eichel"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "5202",
+      "displayName": "Brayden McNabb",
+      "shortName": "B. McNabb",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5202.png",
+       "alt": "Brayden McNabb"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T01:18:18Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -78,
+    "y": 0
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000006820",
+   "sequenceNumber": "143",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Adam Edstrom Goal (3) Wrist Shot, assists: Nicolas Hague (1), Ryan O'Reilly (3)",
+   "awayScore": 2,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "8:45"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "27"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4894222",
+      "displayName": "Adam Edstrom",
+      "shortName": "A. Edstrom",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4894222.png",
+       "alt": "Adam Edstrom"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "4233870",
+      "displayName": "Nicolas Hague",
+      "shortName": "N. Hague",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233870.png",
+       "alt": "Nicolas Hague"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "5208",
+      "displayName": "Ryan O'Reilly",
+      "shortName": "R. O'Reilly",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5208.png",
+       "alt": "Ryan O'Reilly"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T02:04:25Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -82,
+    "y": 7
+   },
+   "strength": {
+    "id": "703",
+    "text": "Shorthanded",
+    "abbreviation": "short-handed"
+   }
+  },
+  {
+   "id": "401892499000007970",
+   "sequenceNumber": "188",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "William Karlsson Goal (2) Snap Shot, assists: Mitch Marner (5), Rasmus Andersson (2)",
+   "awayScore": 3,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "17:44"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "37"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2563057",
+      "displayName": "William Karlsson",
+      "shortName": "W. Karlsson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2563057.png",
+       "alt": "William Karlsson"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "3899937",
+      "displayName": "Mitch Marner",
+      "shortName": "M. Marner",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3899937.png",
+       "alt": "Mitch Marner"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    },
+    {
+     "athlete": {
+      "id": "3904186",
+      "displayName": "Rasmus Andersson",
+      "shortName": "R. Andersson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3904186.png",
+       "alt": "Rasmus Andersson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T02:22:14Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 60,
+    "y": -16
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000008790",
+   "sequenceNumber": "225",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Trevor Connelly Goal (3) Wrist Shot, assists: Noah Hanifin (1), Dylan Coghlan (1)",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "4:49"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "37"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5216887",
+      "displayName": "Trevor Connelly",
+      "shortName": "T. Connelly",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5216887.png",
+       "alt": "Trevor Connelly"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "3652964",
+      "displayName": "Noah Hanifin",
+      "shortName": "N. Hanifin",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3652964.png",
+       "alt": "Noah Hanifin"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4063606",
+      "displayName": "Dylan Coghlan",
+      "shortName": "D. Coghlan",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4063606.png",
+       "alt": "Dylan Coghlan"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T02:51:43Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -73,
+    "y": 6
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892499000001560",
+   "sequenceNumber": "227",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Brett Howden Goal (2) Tip-In, assists: Rasmus Andersson (3), Mark Stone (5)",
+   "awayScore": 5,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "6:24"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:37Z",
+   "team": {
+    "id": "37"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4024989",
+      "displayName": "Brett Howden",
+      "shortName": "B. Howden",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024989.png",
+       "alt": "Brett Howden"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "3904186",
+      "displayName": "Rasmus Andersson",
+      "shortName": "R. Andersson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3904186.png",
+       "alt": "Rasmus Andersson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "5545",
+      "displayName": "Mark Stone",
+      "shortName": "M. Stone",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5545.png",
+       "alt": "Mark Stone"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T02:54:04Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -45,
+    "y": 32
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  }
+ ]
+}

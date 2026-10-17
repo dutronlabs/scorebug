@@ -1,0 +1,668 @@
+{
+ "header": {
+  "id": "401892492",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final/SO",
+      "shortDetail": "Final/SO",
+      "altDetail": "SO"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892492000000540",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:27Z",
+   "wallclock": "2026-10-13T23:08:39Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000000530",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Matty Beniers faceoff won against Christian Dvorak",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:27Z",
+   "team": {
+    "id": "124292"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4781552",
+      "displayName": "Matty Beniers",
+      "shortName": "M. Beniers",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4781552.png",
+       "alt": "Matty Beniers"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3115035",
+      "displayName": "Christian Dvorak",
+      "shortName": "C. Dvorak",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3115035.png",
+       "alt": "Christian Dvorak"
+      }
+     },
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T23:08:39Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000000700",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "503",
+    "text": "Hit",
+    "abbreviation": "hit"
+   },
+   "text": "Tyson Foerster hit Adam Larsson",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:19"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:27Z",
+   "team": {
+    "id": "15"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4697406",
+      "displayName": "Tyson Foerster",
+      "shortName": "T. Foerster",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697406.png",
+       "alt": "Tyson Foerster"
+      }
+     },
+     "type": "hit-credited",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "2562610",
+      "displayName": "Adam Larsson",
+      "shortName": "A. Larsson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2562610.png",
+       "alt": "Adam Larsson"
+      }
+     },
+     "type": "hitted",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T23:08:58Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": -33,
+    "y": -40
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000001670",
+   "sequenceNumber": "35",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Bobby McMann Goal (3) Wrist Shot, assists: Jordan Eberle (3), Chandler Stephenson (6)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "7:57"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:27Z",
+   "team": {
+    "id": "124292"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5048894",
+      "displayName": "Bobby McMann",
+      "shortName": "B. McMann",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5048894.png",
+       "alt": "Bobby McMann"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "5032",
+      "displayName": "Jordan Eberle",
+      "shortName": "J. Eberle",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5032.png",
+       "alt": "Jordan Eberle"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "3067858",
+      "displayName": "Chandler Stephenson",
+      "shortName": "C. Stephenson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3067858.png",
+       "alt": "Chandler Stephenson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    }
+   ],
+   "wallclock": "2026-10-13T23:21:12Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 72,
+    "y": -14
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892492000006610",
+   "sequenceNumber": "150",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Ville Ottavainen Goal (1) Snap Shot, assists: Mackie Samoskevich (1), Josh Mahura (2)",
+   "awayScore": 2,
+   "homeScore": 0,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "8:54"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:28Z",
+   "team": {
+    "id": "124292"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5103811",
+      "displayName": "Ville Ottavainen",
+      "shortName": "V. Ottavainen",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5103811.png",
+       "alt": "Ville Ottavainen"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4874741",
+      "displayName": "Mackie Samoskevich",
+      "shortName": "M. Samoskevich",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874741.png",
+       "alt": "Mackie Samoskevich"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4063504",
+      "displayName": "Joshua Mahura",
+      "shortName": "J. Mahura",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4063504.png",
+       "alt": "Joshua Mahura"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T00:22:09Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -48,
+    "y": 3
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000009100",
+   "sequenceNumber": "248",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Christian Dvorak Goal (2) Snap Shot, assists: Oliver Bonk (1), Dan Vladar (1)",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "6:07"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:28Z",
+   "team": {
+    "id": "15"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3115035",
+      "displayName": "Christian Dvorak",
+      "shortName": "C. Dvorak",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3115035.png",
+       "alt": "Christian Dvorak"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5149199",
+      "displayName": "Oliver Bonk",
+      "shortName": "O. Bonk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5149199.png",
+       "alt": "Oliver Bonk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "3942459",
+      "displayName": "Dan Vladar",
+      "shortName": "D. Vladar",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3942459.png",
+       "alt": "Dan Vladar"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T01:16:26Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -64,
+    "y": 13
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000009360",
+   "sequenceNumber": "258",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Trevor Zegras Goal (1) Snap Shot, assists: Travis Sanheim (2), Owen Tippett (1)",
+   "awayScore": 2,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "7:20"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:28Z",
+   "team": {
+    "id": "15"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4565230",
+      "displayName": "Trevor Zegras",
+      "shortName": "T. Zegras",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565230.png",
+       "alt": "Trevor Zegras"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3114757",
+      "displayName": "Travis Sanheim",
+      "shortName": "T. Sanheim",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114757.png",
+       "alt": "Travis Sanheim"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4392072",
+      "displayName": "Owen Tippett",
+      "shortName": "O. Tippett",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4392072.png",
+       "alt": "Owen Tippett"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T01:22:09Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -69,
+    "y": -5
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000005230",
+   "sequenceNumber": "344",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Matty Beniers Goal Wrist Shot",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:28Z",
+   "team": {
+    "id": "124292"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4781552",
+      "displayName": "Matty Beniers",
+      "shortName": "M. Beniers",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4781552.png",
+       "alt": "Matty Beniers"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    }
+   ],
+   "wallclock": "2026-10-14T01:59:04Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": 67,
+    "y": 4
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000005240",
+   "sequenceNumber": "345",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Matvei Michkov Goal Wrist Shot",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:28Z",
+   "team": {
+    "id": "15"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5149170",
+      "displayName": "Matvei Michkov",
+      "shortName": "M. Michkov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5149170.png",
+       "alt": "Matvei Michkov"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    }
+   ],
+   "wallclock": "2026-10-14T01:59:31Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": -78,
+    "y": 3
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892492000005310",
+   "sequenceNumber": "352",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Bobby McMann Goal Wrist Shot",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:28Z",
+   "team": {
+    "id": "124292"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5048894",
+      "displayName": "Bobby McMann",
+      "shortName": "B. McMann",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5048894.png",
+       "alt": "Bobby McMann"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    }
+   ],
+   "wallclock": "2026-10-14T02:02:50Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": 71,
+    "y": -8
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  }
+ ]
+}
