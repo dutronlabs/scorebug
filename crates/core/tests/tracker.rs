@@ -45,6 +45,8 @@ fn play(id: &str, side: Side, scorer: &str) -> ScoringPlay {
         empty_net: false,
         period: 1,
         clock: None,
+        kind: None,
+        score_after: None,
     }
 }
 
@@ -313,4 +315,83 @@ fn events_serialize_with_a_flat_type_tag() {
     assert_eq!(v["type"], "period_start");
     assert_eq!(v["period"], 2);
     assert_eq!(v["seq"], 7);
+}
+
+// ---- football ----------------------------------------------------------
+
+fn football(period: u8, home: u16, away: u16, plays: Vec<ScoringPlay>) -> GameSnapshot {
+    let mut g = live(period, home, away);
+    g.sport = Sport::Football;
+    g.scoring_plays = plays;
+    g
+}
+
+fn score_play(id: &str, side: Side, kind: ScoreKind, after: (u16, u16)) -> ScoringPlay {
+    ScoringPlay {
+        kind: Some(kind),
+        score_after: Some(after),
+        ..play(id, side, "Player")
+    }
+}
+
+#[test]
+fn touchdown_is_one_goal_and_the_extra_point_is_not() {
+    let td = score_play("p1", Side::Home, ScoreKind::Touchdown, (7, 0));
+    let mut t = Tracker::new();
+    t.ingest(&[football(1, 0, 0, vec![])]);
+    // Six points first, then the kick makes it seven: still one event.
+    let ev = t.ingest(&[football(1, 6, 0, vec![td.clone()])]);
+    assert_eq!(ev.len(), 1);
+    let EventKind::Goal {
+        side,
+        home_score,
+        detail,
+        ..
+    } = &ev[0].kind
+    else {
+        panic!("{:?}", ev[0].kind)
+    };
+    assert_eq!((*side, *home_score), (Side::Home, 7));
+    assert_eq!(detail.as_ref().unwrap().kind, Some(ScoreKind::Touchdown));
+    assert!(t.ingest(&[football(1, 7, 0, vec![td])]).is_empty());
+}
+
+#[test]
+fn field_goal_is_a_goal_and_a_safety_is_not() {
+    let fg = score_play("p1", Side::Away, ScoreKind::FieldGoal, (0, 3));
+    let mut safety = play("p2", Side::Home, "Defense");
+    safety.score_after = Some((2, 3));
+    let mut t = Tracker::new();
+    t.ingest(&[football(1, 0, 0, vec![])]);
+    let ev = t.ingest(&[football(1, 0, 3, vec![fg.clone()])]);
+    assert!(matches!(
+        ev[0].kind,
+        EventKind::Goal {
+            side: Side::Away,
+            away_score: 3,
+            ..
+        }
+    ));
+    assert!(t.ingest(&[football(1, 2, 3, vec![fg, safety])]).is_empty());
+}
+
+#[test]
+fn football_baseline_is_silent_and_nullified_touchdown_is_disallowed() {
+    let old = score_play("p1", Side::Home, ScoreKind::FieldGoal, (3, 0));
+    let td = score_play("p2", Side::Away, ScoreKind::Touchdown, (3, 7));
+    let mut t = Tracker::new();
+    assert!(t.ingest(&[football(2, 3, 0, vec![old.clone()])]).is_empty());
+    assert_eq!(
+        t.ingest(&[football(2, 3, 7, vec![old.clone(), td])]).len(),
+        1
+    );
+    let ev = t.ingest(&[football(2, 3, 0, vec![old])]);
+    assert!(matches!(
+        ev[0].kind,
+        EventKind::GoalDisallowed {
+            side: Side::Away,
+            away_score: 0,
+            ..
+        }
+    ));
 }

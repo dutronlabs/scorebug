@@ -19,6 +19,8 @@ scorebug-sim = { path = "../sim" }
 serde.workspace = true
 serde_json.workspace = true
 tauri = { version = "2", features = ["tray-icon", "image-png"] }
+tauri-plugin-single-instance = "2"
+toml = "1"
 
 [features]
 # Serve the built UI from the binary instead of the Vite dev server.

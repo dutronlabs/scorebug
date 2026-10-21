@@ -1,5 +1,5 @@
 import { h, pulse } from "./dom";
-import { goalTime, statusLine } from "./format";
+import { goalTime, scoreTag, statusLine } from "./format";
 import { scoreline, scorerLine, status, teamRow, teamVars, winner } from "./parts";
 import { AlertQueue, paginate, type Alert, type Notice, type Scoreboard, type Slot } from "./store";
 import type { GameSnapshot } from "./types";
@@ -27,6 +27,11 @@ export const TICKER_TIMING: TickerTiming = {
 
 const CELL_MIN_PX = 300;
 
+const LEAGUE: Record<GameSnapshot["sport"], string> = { hockey: "NHL", basketball: "NBA", football: "NFL" };
+
+/** Brand label for a page, which only ever holds one league. */
+const league = (games: GameSnapshot[]) => (games[0] ? LEAGUE[games[0].sport] : "NHL");
+
 /**
  * Bottom-line ticker. Rotates pages of games and hands the whole stage to a
  * slate when a goal or final comes in. Only one slate shows at a time; the
@@ -36,6 +41,7 @@ export class Ticker {
   readonly el: HTMLElement;
   private stage: HTMLElement;
   private dots: HTMLElement;
+  private brand: HTMLElement;
   private current: HTMLElement | null = null;
   private queue: AlertQueue;
   private mode: "pages" | "slate" = "pages";
@@ -52,7 +58,8 @@ export class Ticker {
     this.queue = new AlertQueue(t.staleMs);
     this.dots = h("span.dots");
     this.stage = h("div.tk-stage");
-    this.el = h("div.ticker", null, h("div.tk-brand", null, h("b", null, "NHL"), this.dots), this.stage);
+    this.brand = h("b", null, "NHL");
+    this.el = h("div.ticker", null, h("div.tk-brand", null, this.brand, this.dots), this.stage);
     this.el.style.setProperty("--fade", `${t.fadeMs}ms`);
   }
 
@@ -112,11 +119,19 @@ export class Ticker {
     this.mode = "pages";
     const per = this.perPage();
     this.stage.style.setProperty("--per-page", `${per}`);
-    const pages = paginate(this.board.byPriority(), per);
+    // Pages never mix leagues: paginate each sport on its own.
+    const all = this.board.byPriority();
+    const pages = (Object.keys(LEAGUE) as GameSnapshot["sport"][]).flatMap((sport) =>
+      paginate(
+        all.filter((g) => g.sport === sport),
+        per,
+      ),
+    );
     if (advance) this.page++;
     if (this.page >= pages.length) this.page = 0;
     const games = pages[this.page] ?? [];
     const ids = games.map((g) => g.id);
+    this.brand.textContent = league(games);
     const same = ids.join() === this.pageIds.join();
     this.pageIds = ids;
     if (same && this.current?.classList.contains("page")) {
@@ -197,11 +212,12 @@ export class Ticker {
     if (alert.body.kind === "goal") {
       const goal = alert.body.goal;
       const team = g[goal.side].team;
+      const tag = scoreTag(goal.detail);
       return h(
         "div.layer.slate.goal",
         { style: teamVars(team.color) },
         h("div.sweep"),
-        h("div.sl-tag", null, "GOAL"),
+        h(`div.sl-tag${tag.length > 5 ? ".long" : ""}`, null, tag),
         h("div.sl-team", null, h("b", null, team.abbr), h("span", null, team.name)),
         scoreline(g, goal),
         h(

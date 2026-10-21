@@ -2,27 +2,20 @@ import type { GameSnapshot, GoalDetail, Side, Strength } from "./types";
 
 // Ports of `GameSnapshot::{period_label, overtime_periods, status_line}`.
 
+const regulation = (g: Pick<GameSnapshot, "sport">) => (g.sport === "hockey" ? 3 : 4);
+
 export function overtimePeriods(g: GameSnapshot): number {
-  const n = Math.max(0, g.period - 3);
+  const n = Math.max(0, g.period - regulation(g));
   return g.shootout ? Math.max(0, n - 1) : n;
 }
 
-export function periodLabel(g: Pick<GameSnapshot, "period" | "shootout">): string {
+export function periodLabel(g: Pick<GameSnapshot, "sport" | "period" | "shootout">): string {
   if (g.shootout) return "SO";
-  switch (g.period) {
-    case 0:
-      return "";
-    case 1:
-      return "1st";
-    case 2:
-      return "2nd";
-    case 3:
-      return "3rd";
-    case 4:
-      return "OT";
-    default:
-      return `${g.period - 3}OT`;
-  }
+  const reg = regulation(g);
+  if (g.period === 0) return "";
+  if (g.period > reg) return g.period === reg + 1 ? "OT" : `${g.period - reg}OT`;
+  if (g.sport !== "hockey") return `Q${g.period}`;
+  return ["1st", "2nd", "3rd"][g.period - 1];
 }
 
 export function statusLine(g: GameSnapshot): string {
@@ -34,7 +27,7 @@ export function statusLine(g: GameSnapshot): string {
     case "live":
       return g.clock && !g.shootout ? `${periodLabel(g)} ${g.clock}` : periodLabel(g);
     case "intermission":
-      return `End ${periodLabel(g)}`;
+      return g.sport !== "hockey" && g.period === 2 ? "Halftime" : `End ${periodLabel(g)}`;
     case "final": {
       if (g.shootout) return "FINAL/SO";
       const ot = overtimePeriods(g);
@@ -62,8 +55,14 @@ export function goalTags(d: GoalDetail): string[] {
   return tags;
 }
 
+/** `TOUCHDOWN` / `FIELD GOAL` for football plays, `GOAL` otherwise. */
+export function scoreTag(d: GoalDetail | undefined): string {
+  return d?.kind === "touchdown" ? "TOUCHDOWN" : d?.kind === "field_goal" ? "FIELD GOAL" : "GOAL";
+}
+
 export function goalTime(d: GoalDetail): string {
-  const p = periodLabel({ period: d.period, shootout: false });
+  // Only football plays carry a `kind`.
+  const p = periodLabel({ sport: d.kind ? "football" : "hockey", period: d.period, shootout: false });
   return d.clock ? `${p} ${d.clock}` : p;
 }
 

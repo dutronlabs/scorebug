@@ -20,12 +20,16 @@
 use std::collections::HashMap;
 use std::time::{Duration, Instant};
 
-use scorebug_core::{GameSnapshot, GameState, ScoringPlay, Side, Sport, Strength, Team, TeamScore};
+use scorebug_core::{
+    GameSnapshot, GameState, ScoreKind, ScoringPlay, Side, Sport, Strength, Team, TeamScore,
+};
 use serde::Deserialize;
 
 use crate::{Fetch, ProviderError, ScoreProvider};
 
 pub const BASE: &str = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl";
+pub const NBA_BASE: &str = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba";
+pub const NFL_BASE: &str = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 
 /// Postseason. Playoff overtime never ends in a shootout.
 const SEASON_POSTSEASON: u8 = 3;
@@ -106,11 +110,15 @@ struct EspnTeam {
 
 /// Scoreboard snapshots, without scoring plays (those need the summary).
 pub fn parse_scoreboard(json: &str) -> Result<Vec<GameSnapshot>, ProviderError> {
-    let sb: Scoreboard = serde_json::from_str(json)?;
-    sb.events.iter().map(snapshot).collect()
+    parse_scoreboard_for(json, Sport::Hockey)
 }
 
-fn snapshot(e: &Event) -> Result<GameSnapshot, ProviderError> {
+pub fn parse_scoreboard_for(json: &str, sport: Sport) -> Result<Vec<GameSnapshot>, ProviderError> {
+    let sb: Scoreboard = serde_json::from_str(json)?;
+    sb.events.iter().map(|e| snapshot(e, sport)).collect()
+}
+
+fn snapshot(e: &Event, sport: Sport) -> Result<GameSnapshot, ProviderError> {
     let comp = e
         .competitions
         .first()
@@ -128,7 +136,7 @@ fn snapshot(e: &Event) -> Result<GameSnapshot, ProviderError> {
         .season
         .as_ref()
         .is_some_and(|s| s.kind == SEASON_POSTSEASON);
-    let shootout = !postseason && st.period >= 5;
+    let shootout = sport == Sport::Hockey && !postseason && st.period >= 5;
     let name = st.kind.name.as_str();
     let state = if name.contains("POSTPONED") || name.contains("CANCELED") {
         GameState::Postponed
@@ -136,6 +144,7 @@ fn snapshot(e: &Event) -> Result<GameSnapshot, ProviderError> {
         match st.kind.state.as_str() {
             "pre" => GameState::Scheduled,
             "post" => GameState::Final,
+            _ if name == "STATUS_HALFTIME" => GameState::Intermission,
             _ if name == "STATUS_END_PERIOD" || (st.clock <= 0.0 && st.period > 0 && !shootout) => {
                 GameState::Intermission
             }
@@ -148,7 +157,7 @@ fn snapshot(e: &Event) -> Result<GameSnapshot, ProviderError> {
 
     Ok(GameSnapshot {
         id: e.id.clone(),
-        sport: Sport::Hockey,
+        sport,
         state,
         start_unix: parse_date(&e.date),
         period: if state == GameState::Scheduled {
@@ -256,6 +265,91 @@ struct Athlete {
     short_name: Option<String>,
 }
 
+/// Touchdowns and field goals from a football summary, in game order. Other
+/// scores (safeties) are dropped: they change the score but raise no alert.
+pub fn parse_football_scoring_plays(
+    json: &str,
+    home_team_id: &str,
+    away_team_id: &str,
+) -> Result<Vec<ScoringPlay>, ProviderError> {
+    let s: FootballSummary = serde_json::from_str(json)?;
+    Ok(s.scoring_plays
+        .iter()
+        .filter_map(|p| football_play(p, home_team_id, away_team_id))
+        .collect())
+}
+
+#[derive(Debug, Deserialize)]
+struct FootballSummary {
+    #[serde(rename = "scoringPlays", default)]
+    scoring_plays: Vec<FootballPlay>,
+}
+
+#[derive(Debug, Deserialize)]
+struct FootballPlay {
+    id: String,
+    #[serde(default)]
+    text: String,
+    team: Option<IdOnly>,
+    period: Option<PlayPeriod>,
+    clock: Option<PlayClock>,
+    #[serde(rename = "scoringType")]
+    scoring_type: Option<ScoringType>,
+    #[serde(rename = "homeScore")]
+    home_score: Option<u16>,
+    #[serde(rename = "awayScore")]
+    away_score: Option<u16>,
+}
+
+#[derive(Debug, Deserialize)]
+struct ScoringType {
+    name: String,
+}
+
+fn football_play(p: &FootballPlay, home: &str, away: &str) -> Option<ScoringPlay> {
+    let kind = match p.scoring_type.as_ref()?.name.as_str() {
+        "touchdown" => ScoreKind::Touchdown,
+        "field-goal" => ScoreKind::FieldGoal,
+        _ => return None,
+    };
+    let side = match p.team.as_ref()?.id.as_str() {
+        id if id == home => Side::Home,
+        id if id == away => Side::Away,
+        _ => return None,
+    };
+    let (scorer, passer) = football_names(&p.text)?;
+    Some(ScoringPlay {
+        id: p.id.clone(),
+        side,
+        scorer,
+        assists: passer.into_iter().collect(),
+        strength: None,
+        empty_net: false,
+        period: p.period.as_ref()?.number,
+        clock: p.clock.as_ref().and_then(|c| c.display_value.clone()),
+        kind: Some(kind),
+        score_after: p.home_score.zip(p.away_score),
+    })
+}
+
+/// Scorer and passer from ESPN's play text:
+/// `Foster Moreau 6 Yd pass from C.J. Stroud (Ka'imi Fairbairn Kick)`,
+/// `Jawhar Jordan 25 Yd Rush (...)`, `Ka'imi Fairbairn 25 Yd Field Goal`.
+fn football_names(text: &str) -> Option<(String, Option<String>)> {
+    let words: Vec<&str> = text.split_whitespace().collect();
+    let yards = words.windows(2).position(|w| {
+        w[0].bytes().all(|b| b.is_ascii_digit()) && w[1].eq_ignore_ascii_case("yd")
+    })?;
+    let scorer = words[..yards].join(" ");
+    if scorer.is_empty() {
+        return None;
+    }
+    let passer = text
+        .split_once(" pass from ")
+        .map(|(_, rest)| rest.split(" (").next().unwrap_or(rest).trim().to_string());
+    Some((scorer, passer.filter(|p| !p.is_empty())))
+}
+
 /// Goals in game order. Shootout attempts and plays without a known scorer
 /// are dropped (the tracker picks the latter up once they appear).
 pub fn parse_scoring_plays(
@@ -316,6 +410,8 @@ fn scoring_play(p: &Play, home: &str, away: &str) -> Option<ScoringPlay> {
             || shot_abbr.as_deref() == Some("empty-net"),
         period: period.number,
         clock: p.clock.as_ref().and_then(|c| c.display_value.clone()),
+        kind: None,
+        score_after: None,
     })
 }
 
@@ -336,6 +432,7 @@ struct Cached {
 pub struct Espn<F: Fetch> {
     http: F,
     base: String,
+    sport: Sport,
     /// `YYYYMMDD`; `None` follows ESPN's notion of "today".
     date: Option<String>,
     cache: HashMap<String, Cached>,
@@ -346,10 +443,27 @@ impl<F: Fetch> Espn<F> {
         Self::with_base(http, BASE)
     }
 
+    /// The NFL scoreboard. Touchdowns and field goals come from the summary.
+    pub fn nfl(http: F) -> Self {
+        Espn {
+            sport: Sport::Football,
+            ..Self::with_base(http, NFL_BASE)
+        }
+    }
+
+    /// The NBA scoreboard. Scores only: there are no scoring plays to fetch.
+    pub fn nba(http: F) -> Self {
+        Espn {
+            sport: Sport::Basketball,
+            ..Self::with_base(http, NBA_BASE)
+        }
+    }
+
     pub fn with_base(http: F, base: &str) -> Self {
         Espn {
             http,
             base: base.trim_end_matches('/').into(),
+            sport: Sport::Hockey,
             date: None,
             cache: HashMap::new(),
         }
@@ -372,13 +486,18 @@ impl<F: Fetch> Espn<F> {
     }
 
     fn needs_summary(&self, g: &GameSnapshot, now: Instant) -> bool {
+        if self.sport == Sport::Basketball {
+            return false;
+        }
         let c = self.cache.get(&g.id);
         let Some(c) = c.filter(|c| c.plays.is_some()) else {
             // Never fetched: needed once the game has goals to attribute.
             return g.home.score + g.away.score > 0;
         };
         let fetched_at = c.fetched_at.unwrap_or(now);
-        let missing = c.plays.as_ref().map_or(0, Vec::len) < goals_expected(g);
+        // Football points don't map to plays one to one: rely on the refresh.
+        let missing =
+            self.sport == Sport::Hockey && c.plays.as_ref().map_or(0, Vec::len) < goals_expected(g);
         let score_moved = c.fetched_for != (g.home.score, g.away.score);
         match g.state {
             GameState::Live | GameState::Intermission => {
@@ -412,7 +531,8 @@ impl<F: Fetch> ScoreProvider for Espn<F> {
     /// Otherwise those plays would look new and be pinned to the next goal.
     fn poll(&mut self) -> Result<Vec<GameSnapshot>, ProviderError> {
         let now = Instant::now();
-        let mut games = parse_scoreboard(&self.http.fetch(&self.scoreboard_url())?)?;
+        let mut games =
+            parse_scoreboard_for(&self.http.fetch(&self.scoreboard_url())?, self.sport)?;
 
         for g in &games {
             let c = self.cache.entry(g.id.clone()).or_default();
@@ -425,6 +545,7 @@ impl<F: Fetch> ScoreProvider for Espn<F> {
             .iter()
             .filter(|g| self.needs_summary(g, now))
             .collect();
+        let sport = self.sport;
         let fetched: Vec<SummaryResult> = std::thread::scope(|s| {
             let handles: Vec<_> = wanted
                 .iter()
@@ -433,7 +554,12 @@ impl<F: Fetch> ScoreProvider for Espn<F> {
                     let http = &self.http;
                     s.spawn(move || {
                         http.fetch(&url).and_then(|body| {
-                            parse_scoring_plays(&body, &g.home.team.id, &g.away.team.id)
+                            let (home, away) = (&g.home.team.id, &g.away.team.id);
+                            if sport == Sport::Football {
+                                parse_football_scoring_plays(&body, home, away)
+                            } else {
+                                parse_scoring_plays(&body, home, away)
+                            }
                         })
                     })
                 })
@@ -459,6 +585,9 @@ impl<F: Fetch> ScoreProvider for Espn<F> {
             }
         }
 
+        if self.sport == Sport::Basketball {
+            return Ok(games);
+        }
         games.retain_mut(|g| {
             let plays = self.cache.get(&g.id).and_then(|c| c.plays.clone());
             match plays {

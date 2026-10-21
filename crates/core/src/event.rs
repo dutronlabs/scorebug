@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
 
-use crate::{ScoringPlay, Side, Strength};
+use crate::{ScoreKind, ScoringPlay, Side, Strength};
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct GoalDetail {
@@ -14,6 +14,8 @@ pub struct GoalDetail {
     pub period: u8,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub clock: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub kind: Option<ScoreKind>,
 }
 
 impl From<&ScoringPlay> for GoalDetail {
@@ -25,6 +27,7 @@ impl From<&ScoringPlay> for GoalDetail {
             empty_net: p.empty_net,
             period: p.period,
             clock: p.clock.clone(),
+            kind: p.kind,
         }
     }
 }

@@ -375,6 +375,7 @@ html[data-view="both"] body {
   line-height: 1;
 }
 
+.slate.goal .sl-tag.long,
 .slate.final .sl-tag,
 .slate.summary .sl-tag {
   font-size: 34px;

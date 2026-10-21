@@ -195,6 +195,8 @@ impl SimGame {
             empty_net,
             period: self.period,
             clock: Some(clock_str(self.period_len() - self.clock)),
+            kind: None,
+            score_after: None,
         };
         let delay = if rng.chance(LATE_SCORER) {
             rng.range(3, 25)

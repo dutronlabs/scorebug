@@ -1,8 +1,10 @@
 use std::collections::HashMap;
 use std::sync::Mutex;
 
-use scorebug_core::{GameState, Side, Strength, Tracker};
-use scorebug_providers::espn::{Espn, parse_scoreboard, parse_scoring_plays};
+use scorebug_core::{GameState, ScoreKind, Side, Strength, Tracker};
+use scorebug_providers::espn::{
+    Espn, parse_football_scoring_plays, parse_scoreboard, parse_scoring_plays,
+};
 use scorebug_providers::{Fetch, ProviderError, ScoreProvider};
 
 const DIR: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/tests/fixtures/espn");
@@ -172,4 +174,28 @@ fn tracker_baseline_from_provider_is_silent() {
     let mut tracker = Tracker::new();
     assert!(tracker.ingest(&espn.poll().unwrap()).is_empty());
     assert!(tracker.ingest(&espn.poll().unwrap()).is_empty());
+}
+
+#[test]
+fn football_touchdowns_and_field_goals_from_summary() {
+    // Atlanta (home, id 1) vs Chicago (away, id 3).
+    let plays =
+        parse_football_scoring_plays(&fixture("nfl-summary-401872999.json"), "1", "3").unwrap();
+    assert_eq!(plays.len(), 8);
+    let first = &plays[0];
+    assert_eq!(first.side, Side::Away);
+    assert_eq!(first.scorer, "Colston Loveland");
+    assert_eq!(first.assists, ["Caleb Williams"]);
+    assert_eq!(first.kind, Some(ScoreKind::Touchdown));
+    assert_eq!((first.period, first.clock.as_deref()), (1, Some("8:15")));
+    assert_eq!(first.score_after, Some((0, 7)));
+
+    let rush = &plays[1];
+    assert_eq!(rush.scorer, "D'Andre Swift");
+    assert!(rush.assists.is_empty());
+
+    let fg = &plays[5];
+    assert_eq!(fg.kind, Some(ScoreKind::FieldGoal));
+    assert_eq!(fg.scorer, "Cairo Santos");
+    assert_eq!(fg.score_after, Some((7, 31)));
 }

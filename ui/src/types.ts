@@ -2,6 +2,8 @@
 
 export type Side = "home" | "away";
 export type GameState = "scheduled" | "live" | "intermission" | "final" | "postponed";
+/** Football only. */
+export type ScoreKind = "touchdown" | "field_goal";
 export type Strength = "even" | "power_play" | "short_handed" | "penalty_shot";
 
 export interface Team {
@@ -26,11 +28,12 @@ export interface ScoringPlay {
   empty_net: boolean;
   period: number;
   clock?: string;
+  kind?: ScoreKind;
 }
 
 export interface GameSnapshot {
   id: string;
-  sport: "hockey";
+  sport: "hockey" | "basketball" | "football";
   state: GameState;
   start_unix?: number;
   period: number;
@@ -48,6 +51,7 @@ export interface GoalDetail {
   empty_net: boolean;
   period: number;
   clock?: string;
+  kind?: ScoreKind;
 }
 
 export type EventKind =

@@ -9,5 +9,7 @@ mod model;
 mod tracker;
 
 pub use event::{EventKind, GameEvent, GoalDetail};
-pub use model::{GameSnapshot, GameState, ScoringPlay, Side, Sport, Strength, Team, TeamScore};
+pub use model::{
+    GameSnapshot, GameState, ScoreKind, ScoringPlay, Side, Sport, Strength, Team, TeamScore,
+};
 pub use tracker::Tracker;

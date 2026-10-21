@@ -8,6 +8,7 @@
 //!
 //! `scorebug [--sim [--seed N] [--warp X]] [--date YYYYMMDD] [--poll SECS] [--grid]`
 
+mod config;
 mod feed;
 
 use std::sync::atomic::{AtomicBool, Ordering};
@@ -19,6 +20,7 @@ use tauri::{
     WebviewWindowBuilder, WindowEvent,
 };
 
+use config::Config;
 use feed::{Feed, Source};
 
 /// Ticker bar height in CSS pixels; matches `--tk-height` in the UI.
@@ -39,7 +41,10 @@ fn main() {
     tauri::Builder::default()
         .manage(Feed::default())
         .manage(ClickThrough(AtomicBool::new(true)))
-        .invoke_handler(tauri::generate_handler![feed::current_frame])
+        .invoke_handler(tauri::generate_handler![
+            feed::current_frame,
+            feed::feed_status
+        ])
         .setup(move |app| {
             let handle = app.handle().clone();
             ticker_window(&handle)?;
@@ -48,7 +53,18 @@ fn main() {
                 grid.show()?;
             }
             tray(&handle)?;
-            feed::spawn(handle, opts.source.clone());
+            let config = handle
+                .path()
+                .config_dir()
+                .map(|dir| Config::load_or_init(&Config::path(&dir)))
+                .unwrap_or_default();
+            feed::spawn(
+                handle,
+                opts.source.clone(),
+                std::time::Duration::from_secs(config.poll_secs),
+                config.nba,
+                config.nfl,
+            );
             Ok(())
         })
         .run(tauri::generate_context!())

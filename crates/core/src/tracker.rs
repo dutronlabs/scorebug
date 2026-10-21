@@ -1,6 +1,6 @@
 use std::collections::{HashMap, HashSet};
 
-use crate::{EventKind, GameEvent, GameSnapshot, GameState, GoalDetail, Side};
+use crate::{EventKind, GameEvent, GameSnapshot, GameState, GoalDetail, Side, Sport};
 
 /// Turns a stream of polled snapshots into discrete [`GameEvent`]s.
 ///
@@ -13,6 +13,10 @@ use crate::{EventKind, GameEvent, GameSnapshot, GameState, GoalDetail, Side};
 ///   followed by `ScorerResolved` when the play shows up. Plays that show up
 ///   before the score are held and attached to the next goal.
 /// - Shootout score changes are not goals; `Final` carries the result.
+/// - Football has no one-point goals: a touchdown is 6 to 8 points and a
+///   conversion follows it. So football games emit a `Goal` per new touchdown
+///   or field goal in `scoring_plays` (the score alone never raises one), and
+///   `GoalDisallowed` when such a play drops out of the list (nullified).
 /// - Nothing is emitted after `Final`, except late scorer details.
 /// - Changes that cancel out between two polls (a goal plus a reversal for
 ///   the same side) are invisible by construction.
@@ -29,6 +33,8 @@ struct GameMemory {
     claimed: HashSet<String>,
     /// Goals emitted without details, oldest first.
     pending: Vec<Pending>,
+    /// Football: plays that raised a `Goal`, so a nullified one is noticed.
+    announced: Vec<(String, Side)>,
 }
 
 #[derive(Debug)]
@@ -83,6 +89,7 @@ impl GameMemory {
             claimed: snap.scoring_plays.iter().map(|p| p.id.clone()).collect(),
             last: snap.clone(),
             pending: Vec::new(),
+            announced: Vec::new(),
         }
     }
 
@@ -110,7 +117,9 @@ impl GameMemory {
                 em.push(EventKind::GameStart);
             }
 
-            if !next.shootout {
+            if next.sport == Sport::Football {
+                self.football_plays(next, &mut em);
+            } else if !next.shootout {
                 self.score_changes(&prev, next, &mut em);
             }
 
@@ -141,6 +150,40 @@ impl GameMemory {
         }
 
         self.resolve_pending(next, &mut em);
+    }
+
+    fn football_plays(&mut self, next: &GameSnapshot, em: &mut Emitter) {
+        let (mut home, mut away) = (next.home.score, next.away.score);
+        let gone: Vec<(String, Side)> = self
+            .announced
+            .iter()
+            .filter(|(id, _)| !next.scoring_plays.iter().any(|p| &p.id == id))
+            .cloned()
+            .collect();
+        for (id, side) in gone {
+            self.announced.retain(|(a, _)| a != &id);
+            em.push(EventKind::GoalDisallowed {
+                side,
+                home_score: home,
+                away_score: away,
+            });
+        }
+        for p in &next.scoring_plays {
+            if p.kind.is_none() || self.claimed.contains(&p.id) {
+                continue;
+            }
+            self.claimed.insert(p.id.clone());
+            self.announced.push((p.id.clone(), p.side));
+            if let Some((h, a)) = p.score_after {
+                (home, away) = (h, a);
+            }
+            em.push(EventKind::Goal {
+                side: p.side,
+                home_score: home,
+                away_score: away,
+                detail: Some(p.into()),
+            });
+        }
     }
 
     fn score_changes(&mut self, prev: &GameSnapshot, next: &GameSnapshot, em: &mut Emitter) {

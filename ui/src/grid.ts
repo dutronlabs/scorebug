@@ -1,4 +1,5 @@
 import { h, pulse } from "./dom";
+import { scoreTag } from "./format";
 import { scoreline, scorerLine, status, teamRow, teamVars } from "./parts";
 import type { GoalRecord, Notice, Scoreboard } from "./store";
 import type { GameSnapshot } from "./types";
@@ -112,7 +113,7 @@ export class Grid {
       `div.card-alert.${kind}${inPlace ? ".static" : ""}`,
       { style: teamVars(team?.color ?? w?.team.color) },
       h("div.sweep"),
-      h("div.ca-tag", null, kind === "goal" ? `${team!.abbr} GOAL` : status(g).textContent),
+      h("div.ca-tag", null, kind === "goal" ? `${team!.abbr} ${scoreTag(goal!.detail)}` : status(g).textContent),
       goal
         ? scoreline(g, goal)
         : scoreline(g, { side: w === g.away ? "away" : "home", homeScore: g.home.score, awayScore: g.away.score }),
