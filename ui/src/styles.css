@@ -1,0 +1,640 @@
+:root {
+  --bg: #07090d;
+  --surface: #0e1117;
+  --surface-2: #161a22;
+  --line: #232937;
+  --text: #eef1f6;
+  --muted: #8a93a6;
+  --live: #ff3b3b;
+  --font: "Barlow Condensed", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
+  --tk-height: 88px;
+  --fade: 300ms;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The ticker window is a transparent overlay; only the bar paints. */
+html[data-view="ticker"],
+html[data-view="ticker"] body {
+  background: transparent;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+/* ---- dev harness ------------------------------------------------------ */
+
+html[data-view="both"] body {
+  background:
+    radial-gradient(1200px 600px at 20% 10%, #1b2533 0%, transparent 60%),
+    radial-gradient(900px 500px at 90% 80%, #24182a 0%, transparent 60%),
+    var(--bg);
+}
+
+.controls {
+  position: fixed;
+  top: 10px;
+  right: 12px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgb(14 17 23 / 0.85);
+  font: 500 15px var(--font);
+  color: var(--muted);
+}
+
+.controls button,
+.controls select,
+.controls input {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+
+.controls input {
+  width: 64px;
+}
+
+.controls progress {
+  width: 140px;
+  cursor: pointer;
+  accent-color: var(--muted);
+}
+
+.controls a {
+  color: var(--muted);
+}
+
+.error {
+  color: #ff8a8a;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
+/* ---- shared pieces ---------------------------------------------------- */
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.chip {
+  flex: none;
+  width: 5px;
+  height: 1em;
+  border-radius: 2px;
+  background: var(--team);
+}
+
+.abbr {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.score {
+  margin-left: auto;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  display: inline-block;
+}
+
+.row.lost {
+  color: var(--muted);
+}
+
+.row.lost .score {
+  font-weight: 500;
+}
+
+.status {
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.status.live::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--live);
+  vertical-align: middle;
+  animation: blink 1.6s ease-in-out infinite;
+}
+
+.status.final {
+  color: var(--text);
+}
+
+.nogoal {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+.scorer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scorer .assists {
+  opacity: 0.75;
+}
+
+.scorer .tag {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.78em;
+  letter-spacing: 0.05em;
+  margin-left: 6px;
+  padding: 0 4px;
+  border-radius: 3px;
+  border: 1px solid currentColor;
+  opacity: 0.85;
+}
+
+.scorer .when {
+  margin-left: 8px;
+  opacity: 0.7;
+}
+
+.scorer.pending {
+  opacity: 0.6;
+  font-style: italic;
+  animation: breathe 1.4s ease-in-out infinite;
+}
+
+.scoreline {
+  display: flex;
+  gap: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreline .part {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  opacity: 0.6;
+}
+
+.scoreline .part.hot {
+  opacity: 1;
+}
+
+.scoreline .n {
+  font-weight: 700;
+}
+
+.bump {
+  animation: bump 700ms cubic-bezier(0.2, 0.9, 0.3, 1.3);
+}
+
+/* Colored sweep across a slate; transform only. */
+.sweep {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 0%, rgb(255 255 255 / 0.18) 45%, transparent 60%);
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.in > .sweep {
+  animation: sweep 1100ms 120ms ease-out;
+}
+
+.static > .sweep {
+  animation: none;
+}
+
+/* ---- ticker ----------------------------------------------------------- */
+
+.ticker {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--tk-height);
+  display: flex;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -6px 24px rgb(0 0 0 / 0.45);
+  overflow: hidden;
+}
+
+.tk-brand {
+  flex: none;
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--surface-2);
+  border-right: 1px solid var(--line);
+}
+
+.tk-brand b {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.dots {
+  display: flex;
+  gap: 4px;
+  height: 5px;
+}
+
+.dots i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.dots i.on {
+  background: var(--muted);
+}
+
+.tk-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition:
+    opacity var(--fade) ease,
+    transform var(--fade) ease;
+}
+
+.layer.in {
+  opacity: 1;
+}
+
+.layer.out {
+  opacity: 0;
+}
+
+.page {
+  display: flex;
+}
+
+.cell {
+  /* Fixed width, so a short last page doesn't stretch its cells. */
+  flex: 0 0 calc(100% / var(--per-page, 4));
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 22px;
+  border-right: 1px solid var(--line);
+}
+
+.cell .rows {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 26px;
+  line-height: 1.05;
+}
+
+.cell .meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 18px;
+}
+
+.cell.scheduled .meta .status {
+  color: var(--text);
+}
+
+.slate {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0 28px;
+  overflow: hidden;
+  background: var(--fill);
+  color: var(--ink);
+}
+
+.slate.goal.in {
+  animation: slam 420ms cubic-bezier(0.2, 0.9, 0.3, 1.15);
+}
+
+.slate.static {
+  animation: none;
+}
+
+.sl-tag {
+  flex: none;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.slate.goal .sl-tag.long,
+.slate.final .sl-tag,
+.slate.summary .sl-tag {
+  font-size: 34px;
+}
+
+.sl-team {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.sl-team b {
+  font-size: 34px;
+}
+
+.sl-team span {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.slate .scoreline {
+  flex: none;
+  font-size: 40px;
+}
+
+.sl-detail {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.sl-detail .when {
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+.slate.final {
+  background: linear-gradient(90deg, var(--fill) 0 8px, var(--surface-2) 8px);
+  color: var(--text);
+}
+
+.slate.summary {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.slate.summary .sl-tag {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+}
+
+.slate.summary .sl-tag small {
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.sum-list {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  min-width: 0;
+}
+
+.sum-item {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2px;
+  min-width: 110px;
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.sum-note {
+  font-size: 15px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.sum-more {
+  font-size: 22px;
+  color: var(--muted);
+}
+
+/* ---- grid ------------------------------------------------------------- */
+
+.grid-wrap {
+  padding: 56px 20px calc(var(--tk-height) + 20px);
+}
+
+html[data-view="grid"] .grid-wrap {
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px 10px;
+  min-height: 150px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.card.live,
+.card.intermission {
+  border-color: #2f3747;
+}
+
+.card.final {
+  background: color-mix(in srgb, var(--surface) 70%, var(--bg));
+}
+
+.card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.card .rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.card .name {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card footer {
+  margin-top: auto;
+  min-height: 20px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.card footer .last {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.card-alert {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px 16px;
+  overflow: hidden;
+  background: var(--fill);
+  color: var(--ink);
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.card-alert.in {
+  opacity: 1;
+  transform: none;
+}
+
+.card-alert.out {
+  opacity: 0;
+  transform: scale(1.02);
+}
+
+.card-alert.final {
+  background: linear-gradient(90deg, var(--fill) 0 6px, var(--surface-2) 6px);
+  color: var(--text);
+}
+
+.ca-tag {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.card-alert .scoreline {
+  font-size: 30px;
+}
+
+.ca-detail {
+  font-size: 17px;
+  min-width: 0;
+}
+
+/* ---- motion ----------------------------------------------------------- */
+
+@keyframes sweep {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slam {
+  from {
+    transform: translateY(30%) scale(1.02);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes breathe {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before {
+    animation: none !important;
+    transition-duration: 1ms !important;
+  }
+}
