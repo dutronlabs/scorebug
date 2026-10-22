@@ -75,7 +75,7 @@ fn main() {
                 );
                 last_key.insert(g.id.clone(), key.clone());
             }
-            if !live && !(changed && g.state == GameState::Final) {
+            if !live && (!changed || g.state != GameState::Final) {
                 continue;
             }
             // Summaries: on change, and every poll while scorers are missing.

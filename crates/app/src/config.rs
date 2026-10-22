@@ -115,6 +115,8 @@ impl Config {
         Ok(c)
     }
 
+    // Not wired up yet: favorites will gate which goals play sound.
+    #[allow(dead_code)]
     pub fn is_favorite(&self, abbr: &str) -> bool {
         self.favorites.iter().any(|f| f == abbr)
     }
