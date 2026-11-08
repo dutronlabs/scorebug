@@ -1,0 +1,873 @@
+{
+ "header": {
+  "id": "401892503",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892503000000520",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T03:15Z",
+   "wallclock": "2026-10-14T03:15:19Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000000510",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Elias Lindholm faceoff won against Alexander Wennberg",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T03:15Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3041994",
+      "displayName": "Elias Lindholm",
+      "shortName": "E. Lindholm",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041994.png",
+       "alt": "Elias Lindholm"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3042017",
+      "displayName": "Alexander Wennberg",
+      "shortName": "A. Wennberg",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042017.png",
+       "alt": "Alexander Wennberg"
+      }
+     },
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T03:15:19Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000000550",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "508",
+    "text": "Blocked",
+    "abbreviation": "shot-blocked"
+   },
+   "text": "Dmitry Orlov shot blocked by Casey Mittelstadt",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:32"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T03:16Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5646",
+      "displayName": "Dmitry Orlov",
+      "shortName": "D. Orlov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5646.png",
+       "alt": "Dmitry Orlov"
+      }
+     },
+     "type": "shooter",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "4233575",
+      "displayName": "Casey Mittelstadt",
+      "shortName": "C. Mittelstadt",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233575.png",
+       "alt": "Casey Mittelstadt"
+      }
+     },
+     "type": "defender",
+     "ytdAssists": 0
+    }
+   ],
+   "wallclock": "2026-10-14T03:15:51Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": 47,
+    "y": -18
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000002600",
+   "sequenceNumber": "53",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Fraser Minten Goal (3) Wrist Shot, assists: Casey Mittelstadt (1), Nikita Zadorov (3)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "12:55"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:58Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5080207",
+      "displayName": "Fraser Minten",
+      "shortName": "F. Minten",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5080207.png",
+       "alt": "Fraser Minten"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "4233575",
+      "displayName": "Casey Mittelstadt",
+      "shortName": "C. Mittelstadt",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233575.png",
+       "alt": "Casey Mittelstadt"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "3042021",
+      "displayName": "Nikita Zadorov",
+      "shortName": "N. Zadorov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042021.png",
+       "alt": "Nikita Zadorov"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T03:35:21Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -44,
+    "y": 14
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000002940",
+   "sequenceNumber": "65",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Jacob Trouba Goal (1) Slap Shot, assists: Kiefer Sherwood (1), Dmitry Orlov (1)",
+   "awayScore": 1,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "15:29"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:58Z",
+   "team": {
+    "id": "18"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2976839",
+      "displayName": "Jacob Trouba",
+      "shortName": "J. Trouba",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2976839.png",
+       "alt": "Jacob Trouba"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4391255",
+      "displayName": "Kiefer Sherwood",
+      "shortName": "K. Sherwood",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4391255.png",
+       "alt": "Kiefer Sherwood"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "5646",
+      "displayName": "Dmitry Orlov",
+      "shortName": "D. Orlov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5646.png",
+       "alt": "Dmitry Orlov"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T03:42:26Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 27,
+    "y": -4
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000004510",
+   "sequenceNumber": "85",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Charlie McAvoy Goal (1) Wrist Shot, assists: JJ Peterka (3)",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "18:43"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:58Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3988803",
+      "displayName": "Charlie McAvoy",
+      "shortName": "C. McAvoy",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3988803.png",
+       "alt": "Charlie McAvoy"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4697438",
+      "displayName": "JJ Peterka",
+      "shortName": "J. Peterka",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697438.png",
+       "alt": "JJ Peterka"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T03:49:44Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -80,
+    "y": -1
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000005950",
+   "sequenceNumber": "137",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Ivar Stenberg Goal (1) Wrist Shot, assists: Macklin Celebrini (6), Dmitry Orlov (2)",
+   "awayScore": 2,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "5:48"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:59Z",
+   "team": {
+    "id": "18"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5361709",
+      "displayName": "Ivar Stenberg",
+      "shortName": "I. Stenberg",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5361709.png",
+       "alt": "Ivar Stenberg"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "5206628",
+      "displayName": "Macklin Celebrini",
+      "shortName": "M. Celebrini",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5206628.png",
+       "alt": "Macklin Celebrini"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    },
+    {
+     "athlete": {
+      "id": "5646",
+      "displayName": "Dmitry Orlov",
+      "shortName": "D. Orlov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5646.png",
+       "alt": "Dmitry Orlov"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T04:20:39Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -86,
+    "y": -2
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892503000004560",
+   "sequenceNumber": "156",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Matthew Poitras Goal (2) Tip-In, assists: Mark Kastelic (4), Morgan Geekie (4)",
+   "awayScore": 3,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "8:42"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:59Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5080221",
+      "displayName": "Matthew Poitras",
+      "shortName": "M. Poitras",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5080221.png",
+       "alt": "Matthew Poitras"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4587985",
+      "displayName": "Mark Kastelic",
+      "shortName": "M. Kastelic",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4587985.png",
+       "alt": "Mark Kastelic"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    },
+    {
+     "athlete": {
+      "id": "4268466",
+      "displayName": "Morgan Geekie",
+      "shortName": "M. Geekie",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4268466.png",
+       "alt": "Morgan Geekie"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-14T04:28:30Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 83,
+    "y": 2
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000007740",
+   "sequenceNumber": "226",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Pavel Zacha Goal (2) Wrist Shot, assists: Morgan Geekie (5), David Pastrnak (6)",
+   "awayScore": 4,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "19:57"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:49Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3899949",
+      "displayName": "Pavel Zacha",
+      "shortName": "P. Zacha",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3899949.png",
+       "alt": "Pavel Zacha"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4268466",
+      "displayName": "Morgan Geekie",
+      "shortName": "M. Geekie",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4268466.png",
+       "alt": "Morgan Geekie"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    },
+    {
+     "athlete": {
+      "id": "3114778",
+      "displayName": "David Pastrnak",
+      "shortName": "D. Pastrnak",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114778.png",
+       "alt": "David Pastrnak"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    }
+   ],
+   "wallclock": "2026-10-14T04:51:41Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 63,
+    "y": 11
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000008520",
+   "sequenceNumber": "256",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Macklin Celebrini Goal (2) Snap Shot, assists: Ivar Stenberg (3), Will Smith (2)",
+   "awayScore": 4,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "5:04"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:21Z",
+   "team": {
+    "id": "18"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5206628",
+      "displayName": "Macklin Celebrini",
+      "shortName": "M. Celebrini",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5206628.png",
+       "alt": "Macklin Celebrini"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5361709",
+      "displayName": "Ivar Stenberg",
+      "shortName": "I. Stenberg",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5361709.png",
+       "alt": "Ivar Stenberg"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "5149155",
+      "displayName": "Will Smith",
+      "shortName": "W. Smith",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5149155.png",
+       "alt": "Will Smith"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T05:19:01Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 64,
+    "y": -24
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892503000009430",
+   "sequenceNumber": "283",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Fraser Minten Goal (4) Tip-In, assists: Marat Khusnutdinov (2), Mason Lohrei (3)",
+   "awayScore": 5,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "11:47"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:35Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5080207",
+      "displayName": "Fraser Minten",
+      "shortName": "F. Minten",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5080207.png",
+       "alt": "Fraser Minten"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "4697442",
+      "displayName": "Marat Khusnutdinov",
+      "shortName": "M. Khusnutdinov",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697442.png",
+       "alt": "Marat Khusnutdinov"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4697461",
+      "displayName": "Mason Lohrei",
+      "shortName": "M. Lohrei",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697461.png",
+       "alt": "Mason Lohrei"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T05:34:29Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -83,
+    "y": 0
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892503000004650",
+   "sequenceNumber": "315",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "William Borgen Goal (1) Wrist Shot, assists: none",
+   "awayScore": 6,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "18:18"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:48Z",
+   "team": {
+    "id": "1"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3941946",
+      "displayName": "Will Borgen",
+      "shortName": "W. Borgen",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3941946.png",
+       "alt": "Will Borgen"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    }
+   ],
+   "wallclock": "2026-10-14T05:45:51Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   },
+   "coordinate": {
+    "x": 75,
+    "y": 34
+   },
+   "strength": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   }
+  }
+ ]
+}

@@ -1,0 +1,584 @@
+{
+ "header": {
+  "id": "401892502",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892502000001020",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:39Z",
+   "wallclock": "2026-10-14T02:39:09Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892502000001010",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Scott Laughton faceoff won against Connor McDavid",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:39Z",
+   "team": {
+    "id": "8"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2976848",
+      "displayName": "Scott Laughton",
+      "shortName": "S. Laughton",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2976848.png",
+       "alt": "Scott Laughton"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "3895074",
+      "displayName": "Connor McDavid",
+      "shortName": "C. McDavid",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3895074.png",
+       "alt": "Connor McDavid"
+      }
+     },
+     "ytdAssists": 10
+    }
+   ],
+   "wallclock": "2026-10-14T02:39:09Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892502000001250",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "503",
+    "text": "Hit",
+    "abbreviation": "hit"
+   },
+   "text": "Owen Michaels hit Erik Gustafsson",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:44"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:41Z",
+   "team": {
+    "id": "6"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5206840",
+      "displayName": "Owen Michaels",
+      "shortName": "O. Michaels",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5206840.png",
+       "alt": "Owen Michaels"
+      }
+     },
+     "type": "hit-credited",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "3891922",
+      "displayName": "Erik Gustafsson",
+      "shortName": "E. Gustafsson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3891922.png",
+       "alt": "Erik Gustafsson"
+      }
+     },
+     "type": "hitted",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T02:39:53Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": 96,
+    "y": -17
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892502000002080",
+   "sequenceNumber": "39",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Leon Draisaitl Goal (4) Snap Shot, assists: Connor McDavid (11), Evan Bouchard (7)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "7:16"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:21Z",
+   "team": {
+    "id": "6"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3114727",
+      "displayName": "Leon Draisaitl",
+      "shortName": "L. Draisaitl",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114727.png",
+       "alt": "Leon Draisaitl"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "3895074",
+      "displayName": "Connor McDavid",
+      "shortName": "C. McDavid",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3895074.png",
+       "alt": "Connor McDavid"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 11
+    },
+    {
+     "athlete": {
+      "id": "4352722",
+      "displayName": "Evan Bouchard",
+      "shortName": "E. Bouchard",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4352722.png",
+       "alt": "Evan Bouchard"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 7
+    }
+   ],
+   "wallclock": "2026-10-14T02:52:01Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 84,
+    "y": 16
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892502000002280",
+   "sequenceNumber": "50",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Vasily Podkolzin Goal (6) Snap Shot, assists: Connor McDavid (12), Evan Bouchard (8)",
+   "awayScore": 2,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "8:16"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:13Z",
+   "team": {
+    "id": "6"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4565231",
+      "displayName": "Vasily Podkolzin",
+      "shortName": "V. Podkolzin",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565231.png",
+       "alt": "Vasily Podkolzin"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 6
+    },
+    {
+     "athlete": {
+      "id": "3895074",
+      "displayName": "Connor McDavid",
+      "shortName": "C. McDavid",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3895074.png",
+       "alt": "Connor McDavid"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 12
+    },
+    {
+     "athlete": {
+      "id": "4352722",
+      "displayName": "Evan Bouchard",
+      "shortName": "E. Bouchard",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4352722.png",
+       "alt": "Evan Bouchard"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 8
+    }
+   ],
+   "wallclock": "2026-10-14T02:55:21Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 74,
+    "y": 15
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892502000003690",
+   "sequenceNumber": "81",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Connor McDavid Goal (4) Backhand, assists: Ty Emberson (1), Jason Dickinson (1)",
+   "awayScore": 3,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "15:48"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T03:09Z",
+   "team": {
+    "id": "6"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3895074",
+      "displayName": "Connor McDavid",
+      "shortName": "C. McDavid",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3895074.png",
+       "alt": "Connor McDavid"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "4587566",
+      "displayName": "Ty Emberson",
+      "shortName": "T. Emberson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4587566.png",
+       "alt": "Ty Emberson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "3042062",
+      "displayName": "Jason Dickinson",
+      "shortName": "J. Dickinson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042062.png",
+       "alt": "Jason Dickinson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T03:07:36Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 86,
+    "y": -4
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892502000007650",
+   "sequenceNumber": "199",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Brandt Clarke Goal (1) Wrist Shot, assists: Scott Laughton (1), Trevor Moore (1)",
+   "awayScore": 3,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "17:29"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:49Z",
+   "team": {
+    "id": "8"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874722",
+      "displayName": "Brandt Clarke",
+      "shortName": "B. Clarke",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874722.png",
+       "alt": "Brandt Clarke"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "2976848",
+      "displayName": "Scott Laughton",
+      "shortName": "S. Laughton",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2976848.png",
+       "alt": "Scott Laughton"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "3096186",
+      "displayName": "Trevor Moore",
+      "shortName": "T. Moore",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3096186.png",
+       "alt": "Trevor Moore"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T04:09:03Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 38,
+    "y": -9
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892502000010650",
+   "sequenceNumber": "308",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Vasily Podkolzin Goal (7) Wrist Shot, assists: Connor McDavid (13), Leon Draisaitl (7)",
+   "awayScore": 4,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "17:42"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T05:22Z",
+   "team": {
+    "id": "6"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4565231",
+      "displayName": "Vasily Podkolzin",
+      "shortName": "V. Podkolzin",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565231.png",
+       "alt": "Vasily Podkolzin"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 7
+    },
+    {
+     "athlete": {
+      "id": "3895074",
+      "displayName": "Connor McDavid",
+      "shortName": "C. McDavid",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3895074.png",
+       "alt": "Connor McDavid"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 13
+    },
+    {
+     "athlete": {
+      "id": "3114727",
+      "displayName": "Leon Draisaitl",
+      "shortName": "L. Draisaitl",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114727.png",
+       "alt": "Leon Draisaitl"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 7
+    }
+   ],
+   "wallclock": "2026-10-14T05:09:07Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   },
+   "coordinate": {
+    "x": 0,
+    "y": 24
+   },
+   "strength": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   }
+  }
+ ]
+}

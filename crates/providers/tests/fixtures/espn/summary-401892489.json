@@ -1,0 +1,954 @@
+{
+ "header": {
+  "id": "401892489",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892489000000520",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T22:24Z",
+   "wallclock": "2026-10-13T22:24:04Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000000510",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Sam Bennett faceoff won against Charlie Coyle",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T22:24Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3114732",
+      "displayName": "Sam Bennett",
+      "shortName": "S. Bennett",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114732.png",
+       "alt": "Sam Bennett"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "2555315",
+      "displayName": "Charlie Coyle",
+      "shortName": "C. Coyle",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2555315.png",
+       "alt": "Charlie Coyle"
+      }
+     },
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-13T22:24:04Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000000550",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "507",
+    "text": "Missed",
+    "abbreviation": "shot-missed"
+   },
+   "text": "Brady Tkachuk Snap Shot Wide Right",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:10"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-13T22:24Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4319858",
+      "displayName": "Brady Tkachuk",
+      "shortName": "B. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4319858.png",
+       "alt": "Brady Tkachuk"
+      }
+     },
+     "type": "shooter",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "5734",
+      "displayName": "Cam Talbot",
+      "shortName": "C. Talbot",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5734.png",
+       "alt": "Cam Talbot"
+      }
+     },
+     "ytdAssists": 0
+    }
+   ],
+   "wallclock": "2026-10-13T22:24:14Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": -39,
+    "y": -34
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000003650",
+   "sequenceNumber": "73",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Kent Johnson Goal (3) Wrist Shot, assists: none",
+   "awayScore": 0,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "14:11"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-13T23:18Z",
+   "team": {
+    "id": "29"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4781553",
+      "displayName": "Kent Johnson",
+      "shortName": "K. Johnson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4781553.png",
+       "alt": "Kent Johnson"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    }
+   ],
+   "wallclock": "2026-10-13T22:48:06Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 71,
+    "y": 3
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000005820",
+   "sequenceNumber": "120",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Brady Tkachuk Goal (1) Wrist Shot, assists: Matthew Tkachuk (3)",
+   "awayScore": 1,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "2:27"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-13T23:25Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4319858",
+      "displayName": "Brady Tkachuk",
+      "shortName": "B. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4319858.png",
+       "alt": "Brady Tkachuk"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4024854",
+      "displayName": "Matthew Tkachuk",
+      "shortName": "M. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024854.png",
+       "alt": "Matthew Tkachuk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-13T23:23:39Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 58,
+    "y": 8
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000006390",
+   "sequenceNumber": "149",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Brady Tkachuk Goal (2) Tip-In, assists: Matthew Tkachuk (4), Seth Jones (3)",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "6:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T00:16Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4319858",
+      "displayName": "Brady Tkachuk",
+      "shortName": "B. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4319858.png",
+       "alt": "Brady Tkachuk"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4024854",
+      "displayName": "Matthew Tkachuk",
+      "shortName": "M. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024854.png",
+       "alt": "Matthew Tkachuk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    },
+    {
+     "athlete": {
+      "id": "3041992",
+      "displayName": "Seth Jones",
+      "shortName": "S. Jones",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041992.png",
+       "alt": "Seth Jones"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-13T23:30:58Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 75,
+    "y": -2
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892489000006920",
+   "sequenceNumber": "171",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Brady Tkachuk Goal (3) Wrist Shot, assists: Sam Reinhart (1), Matthew Tkachuk (5)",
+   "awayScore": 3,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "10:30"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T00:16Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4319858",
+      "displayName": "Brady Tkachuk",
+      "shortName": "B. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4319858.png",
+       "alt": "Brady Tkachuk"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "3114722",
+      "displayName": "Sam Reinhart",
+      "shortName": "S. Reinhart",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114722.png",
+       "alt": "Sam Reinhart"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4024854",
+      "displayName": "Matthew Tkachuk",
+      "shortName": "M. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024854.png",
+       "alt": "Matthew Tkachuk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-13T23:40:58Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 83,
+    "y": 8
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892489000007900",
+   "sequenceNumber": "210",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Carter Verhaeghe Goal (2) Snap Shot, assists: Brady Tkachuk (2), Matthew Tkachuk (6)",
+   "awayScore": 4,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "17:50"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:05Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3042088",
+      "displayName": "Carter Verhaeghe",
+      "shortName": "C. Verhaeghe",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042088.png",
+       "alt": "Carter Verhaeghe"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4319858",
+      "displayName": "Brady Tkachuk",
+      "shortName": "B. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4319858.png",
+       "alt": "Brady Tkachuk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4024854",
+      "displayName": "Matthew Tkachuk",
+      "shortName": "M. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024854.png",
+       "alt": "Matthew Tkachuk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    }
+   ],
+   "wallclock": "2026-10-14T00:02:22Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 84,
+    "y": 13
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892489000008430",
+   "sequenceNumber": "235",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Sam Reinhart Goal (3) Tip-In, assists: Matthew Tkachuk (7), Seth Jones (4)",
+   "awayScore": 5,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "1:20"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T00:29Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3114722",
+      "displayName": "Sam Reinhart",
+      "shortName": "S. Reinhart",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114722.png",
+       "alt": "Sam Reinhart"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "4024854",
+      "displayName": "Matthew Tkachuk",
+      "shortName": "M. Tkachuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024854.png",
+       "alt": "Matthew Tkachuk"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 7
+    },
+    {
+     "athlete": {
+      "id": "3041992",
+      "displayName": "Seth Jones",
+      "shortName": "S. Jones",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041992.png",
+       "alt": "Seth Jones"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-14T00:27:56Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -74,
+    "y": 0
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892489000008710",
+   "sequenceNumber": "248",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Carter Verhaeghe Goal (3) Wrist Shot, assists: Lars Eller (4), Seth Jones (5)",
+   "awayScore": 6,
+   "homeScore": 1,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "3:28"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:18Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3042088",
+      "displayName": "Carter Verhaeghe",
+      "shortName": "C. Verhaeghe",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042088.png",
+       "alt": "Carter Verhaeghe"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "3946",
+      "displayName": "Lars Eller",
+      "shortName": "L. Eller",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3946.png",
+       "alt": "Lars Eller"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    },
+    {
+     "athlete": {
+      "id": "3041992",
+      "displayName": "Seth Jones",
+      "shortName": "S. Jones",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041992.png",
+       "alt": "Seth Jones"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T00:31:46Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -47,
+    "y": -13
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000010600",
+   "sequenceNumber": "301",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Denton Mateychuk Goal (1) Snap Shot, assists: Damon Severson (2), Valeri Nichushkin (2)",
+   "awayScore": 6,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "13:47"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:18Z",
+   "team": {
+    "id": "29"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5080156",
+      "displayName": "Denton Mateychuk",
+      "shortName": "D. Mateychuk",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5080156.png",
+       "alt": "Denton Mateychuk"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3068087",
+      "displayName": "Damon Severson",
+      "shortName": "D. Severson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3068087.png",
+       "alt": "Damon Severson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "3042003",
+      "displayName": "Valeri Nichushkin",
+      "shortName": "V. Nichushkin",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042003.png",
+       "alt": "Valeri Nichushkin"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T00:50:23Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 65,
+    "y": 17
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000010660",
+   "sequenceNumber": "305",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Cole Sillinger Goal (3) Snap Shot, assists: Charlie Coyle (5), Damon Severson (3)",
+   "awayScore": 6,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "14:09"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:20Z",
+   "team": {
+    "id": "29"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874725",
+      "displayName": "Cole Sillinger",
+      "shortName": "C. Sillinger",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874725.png",
+       "alt": "Cole Sillinger"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "2555315",
+      "displayName": "Charlie Coyle",
+      "shortName": "C. Coyle",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2555315.png",
+       "alt": "Charlie Coyle"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    },
+    {
+     "athlete": {
+      "id": "3068087",
+      "displayName": "Damon Severson",
+      "shortName": "D. Severson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3068087.png",
+       "alt": "Damon Severson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T00:51:49Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 70,
+    "y": 14
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892489000011130",
+   "sequenceNumber": "323",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Sam Reinhart Goal (4) Snap Shot, assists: Anton Lundell (2), Seth Jones (6)",
+   "awayScore": 7,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "17:43"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T01:20Z",
+   "team": {
+    "id": "26"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3114722",
+      "displayName": "Sam Reinhart",
+      "shortName": "S. Reinhart",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3114722.png",
+       "alt": "Sam Reinhart"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "4697395",
+      "displayName": "Anton Lundell",
+      "shortName": "A. Lundell",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4697395.png",
+       "alt": "Anton Lundell"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "3041992",
+      "displayName": "Seth Jones",
+      "shortName": "S. Jones",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041992.png",
+       "alt": "Seth Jones"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    }
+   ],
+   "wallclock": "2026-10-14T01:00:21Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   },
+   "coordinate": {
+    "x": 25,
+    "y": -35
+   },
+   "strength": {
+    "id": "903",
+    "text": "Empty Net",
+    "abbreviation": "empty-net"
+   }
+  }
+ ]
+}

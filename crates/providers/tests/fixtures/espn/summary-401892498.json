@@ -1,0 +1,584 @@
+{
+ "header": {
+  "id": "401892498",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892498000000520",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T04:49Z",
+   "wallclock": "2026-10-14T00:46:28Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892498000000510",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Roope Hintz faceoff won against Nathan MacKinnon",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T04:49Z",
+   "team": {
+    "id": "9"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3904183",
+      "displayName": "Roope Hintz",
+      "shortName": "R. Hintz",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3904183.png",
+       "alt": "Roope Hintz"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3041969",
+      "displayName": "Nathan MacKinnon",
+      "shortName": "N. MacKinnon",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041969.png",
+       "alt": "Nathan MacKinnon"
+      }
+     },
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-14T00:46:28Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892498000000740",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "503",
+    "text": "Hit",
+    "abbreviation": "hit"
+   },
+   "text": "Roope Hintz hit Martin Necas",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:34"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T04:49Z",
+   "team": {
+    "id": "9"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3904183",
+      "displayName": "Roope Hintz",
+      "shortName": "R. Hintz",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3904183.png",
+       "alt": "Roope Hintz"
+      }
+     },
+     "type": "hit-credited",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4233586",
+      "displayName": "Martin Necas",
+      "shortName": "M. Necas",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233586.png",
+       "alt": "Martin Necas"
+      }
+     },
+     "type": "hitted",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T00:47:02Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": 46,
+    "y": 37
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892498000003150",
+   "sequenceNumber": "65",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Artturi Lehkonen Goal (4) Backhand, assists: Nathan MacKinnon (6), Josh Manson (3)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "11:32"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:50Z",
+   "team": {
+    "id": "17"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3042050",
+      "displayName": "Artturi Lehkonen",
+      "shortName": "A. Lehkonen",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3042050.png",
+       "alt": "Artturi Lehkonen"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "3041969",
+      "displayName": "Nathan MacKinnon",
+      "shortName": "N. MacKinnon",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041969.png",
+       "alt": "Nathan MacKinnon"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 6
+    },
+    {
+     "athlete": {
+      "id": "2590829",
+      "displayName": "Josh Manson",
+      "shortName": "J. Manson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2590829.png",
+       "alt": "Josh Manson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T01:07:26Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 69,
+    "y": -5
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892498000001040",
+   "sequenceNumber": "116",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Tyler Seguin Goal (2) Snap Shot, assists: Jason Robertson (3), Miro Heiskanen (2)",
+   "awayScore": 1,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "19:06"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:50Z",
+   "team": {
+    "id": "9"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5430",
+      "displayName": "Tyler Seguin",
+      "shortName": "T. Seguin",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5430.png",
+       "alt": "Tyler Seguin"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "4233875",
+      "displayName": "Jason Robertson",
+      "shortName": "J. Robertson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233875.png",
+       "alt": "Jason Robertson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "4233536",
+      "displayName": "Miro Heiskanen",
+      "shortName": "M. Heiskanen",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233536.png",
+       "alt": "Miro Heiskanen"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T01:25:27Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -88,
+    "y": -18
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892498000005880",
+   "sequenceNumber": "147",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Martin Necas Goal (3) Slap Shot, assists: Nathan MacKinnon (7), Nicolas Roy (2)",
+   "awayScore": 2,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "3:05"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:50Z",
+   "team": {
+    "id": "17"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4233586",
+      "displayName": "Martin Necas",
+      "shortName": "M. Necas",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233586.png",
+       "alt": "Martin Necas"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "3041969",
+      "displayName": "Nathan MacKinnon",
+      "shortName": "N. MacKinnon",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3041969.png",
+       "alt": "Nathan MacKinnon"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 7
+    },
+    {
+     "athlete": {
+      "id": "3943996",
+      "displayName": "Nicolas Roy",
+      "shortName": "N. Roy",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3943996.png",
+       "alt": "Nicolas Roy"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T01:51:55Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -52,
+    "y": 9
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892498000007720",
+   "sequenceNumber": "218",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Martin Necas Goal (4) Snap Shot, assists: Gabriel Landeskog (2), Devon Toews (4)",
+   "awayScore": 3,
+   "homeScore": 1,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "16:14"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:50Z",
+   "team": {
+    "id": "17"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4233586",
+      "displayName": "Martin Necas",
+      "shortName": "M. Necas",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233586.png",
+       "alt": "Martin Necas"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    },
+    {
+     "athlete": {
+      "id": "2562609",
+      "displayName": "Gabriel Landeskog",
+      "shortName": "G. Landeskog",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2562609.png",
+       "alt": "Gabriel Landeskog"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "3096249",
+      "displayName": "Devon Toews",
+      "shortName": "D. Toews",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3096249.png",
+       "alt": "Devon Toews"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 4
+    }
+   ],
+   "wallclock": "2026-10-14T02:21:46Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -86,
+    "y": -9
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892498000008610",
+   "sequenceNumber": "258",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Roope Hintz Goal (2) Snap Shot, assists: Tyler Seguin (1), Miro Heiskanen (3)",
+   "awayScore": 3,
+   "homeScore": 2,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "3:17"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T04:50Z",
+   "team": {
+    "id": "9"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3904183",
+      "displayName": "Roope Hintz",
+      "shortName": "R. Hintz",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3904183.png",
+       "alt": "Roope Hintz"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5430",
+      "displayName": "Tyler Seguin",
+      "shortName": "T. Seguin",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5430.png",
+       "alt": "Tyler Seguin"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4233536",
+      "displayName": "Miro Heiskanen",
+      "shortName": "M. Heiskanen",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233536.png",
+       "alt": "Miro Heiskanen"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T02:53:05Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -76,
+    "y": -13
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  }
+ ]
+}

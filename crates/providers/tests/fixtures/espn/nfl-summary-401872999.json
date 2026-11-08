@@ -1,0 +1,220 @@
+{
+ "scoringPlays": [
+  {
+   "id": "401872999384",
+   "type": {
+    "id": "67",
+    "text": "Passing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "Colston Loveland 14 Yd pass from Caleb Williams (Cairo Santos Kick)",
+   "awayScore": 7,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 495.0,
+    "displayValue": "8:15"
+   },
+   "team": {
+    "id": "3",
+    "abbreviation": "CHI"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  },
+  {
+   "id": "401872999764",
+   "type": {
+    "id": "68",
+    "text": "Rushing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "D'Andre Swift 4 Yd Rush (Cairo Santos Kick)",
+   "awayScore": 14,
+   "homeScore": 0,
+   "period": {
+    "number": 1
+   },
+   "clock": {
+    "value": 67.0,
+    "displayValue": "1:07"
+   },
+   "team": {
+    "id": "3",
+    "abbreviation": "CHI"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  },
+  {
+   "id": "4018729991488",
+   "type": {
+    "id": "67",
+    "text": "Passing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "Jahan Dotson 13 Yd pass from Michael Penix Jr. (Nick Folk Kick)",
+   "awayScore": 14,
+   "homeScore": 7,
+   "period": {
+    "number": 2
+   },
+   "clock": {
+    "value": 345.0,
+    "displayValue": "5:45"
+   },
+   "team": {
+    "id": "1",
+    "abbreviation": "ATL"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  },
+  {
+   "id": "4018729991878",
+   "type": {
+    "id": "68",
+    "text": "Rushing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "D'Andre Swift 2 Yd Rush (Cairo Santos Kick)",
+   "awayScore": 21,
+   "homeScore": 7,
+   "period": {
+    "number": 2
+   },
+   "clock": {
+    "value": 86.0,
+    "displayValue": "1:26"
+   },
+   "team": {
+    "id": "3",
+    "abbreviation": "CHI"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  },
+  {
+   "id": "4018729993095",
+   "type": {
+    "id": "68",
+    "text": "Rushing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "Roschon Johnson 4 Yd Rush (Cairo Santos Kick)",
+   "awayScore": 28,
+   "homeScore": 7,
+   "period": {
+    "number": 3
+   },
+   "clock": {
+    "value": 108.0,
+    "displayValue": "1:48"
+   },
+   "team": {
+    "id": "3",
+    "abbreviation": "CHI"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  },
+  {
+   "id": "4018729993259",
+   "type": {
+    "id": "59",
+    "text": "Field Goal Good",
+    "abbreviation": "FG"
+   },
+   "text": "Cairo Santos 50 Yd Field Goal",
+   "awayScore": 31,
+   "homeScore": 7,
+   "period": {
+    "number": 4
+   },
+   "clock": {
+    "value": 896.0,
+    "displayValue": "14:56"
+   },
+   "team": {
+    "id": "3",
+    "abbreviation": "CHI"
+   },
+   "scoringType": {
+    "name": "field-goal",
+    "displayName": "Field Goal",
+    "abbreviation": "FG"
+   }
+  },
+  {
+   "id": "4018729993706",
+   "type": {
+    "id": "67",
+    "text": "Passing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "Kyle Pitts Sr. 10 Yd pass from Michael Penix Jr. (Michael Penix Jr. Pass to Zachariah Branch for Two-Point Conversion)",
+   "awayScore": 31,
+   "homeScore": 15,
+   "period": {
+    "number": 4
+   },
+   "clock": {
+    "value": 574.0,
+    "displayValue": "9:34"
+   },
+   "team": {
+    "id": "1",
+    "abbreviation": "ATL"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  },
+  {
+   "id": "4018729993992",
+   "type": {
+    "id": "67",
+    "text": "Passing Touchdown",
+    "abbreviation": "TD"
+   },
+   "text": "Kyle Pitts Sr. 5 Yd pass from Michael Penix Jr. (Michael Penix Jr. Pass to Drake London for Two-Point Conversion)",
+   "awayScore": 31,
+   "homeScore": 23,
+   "period": {
+    "number": 4
+   },
+   "clock": {
+    "value": 341.0,
+    "displayValue": "5:41"
+   },
+   "team": {
+    "id": "1",
+    "abbreviation": "ATL"
+   },
+   "scoringType": {
+    "name": "touchdown",
+    "displayName": "Touchdown",
+    "abbreviation": "TD"
+   }
+  }
+ ]
+}

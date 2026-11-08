@@ -1,0 +1,856 @@
+{
+ "header": {
+  "id": "401892490",
+  "competitions": [
+   {
+    "status": {
+     "type": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final/SO",
+      "shortDetail": "Final/SO",
+      "altDetail": "SO"
+     }
+    }
+   }
+  ]
+ },
+ "plays": [
+  {
+   "id": "401892490000000520",
+   "sequenceNumber": "2",
+   "type": {
+    "id": "518",
+    "text": "Period Start",
+    "abbreviation": "period-start"
+   },
+   "text": "Start of 1st Period",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:20Z",
+   "wallclock": "2026-10-13T22:38:42Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000000510",
+   "sequenceNumber": "3",
+   "type": {
+    "id": "502",
+    "text": "Face Off",
+    "abbreviation": "faceoff"
+   },
+   "text": "Phillip Danault faceoff won against Ryan McLeod",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:20Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "2562602",
+      "displayName": "Phillip Danault",
+      "shortName": "P. Danault",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/2562602.png",
+       "alt": "Phillip Danault"
+      }
+     },
+     "type": "face-off-winner",
+     "ytdGoals": 0
+    },
+    {
+     "athlete": {
+      "id": "4378669",
+      "displayName": "Ryan McLeod",
+      "shortName": "R. McLeod",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4378669.png",
+       "alt": "Ryan McLeod"
+      }
+     },
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T22:38:42Z",
+   "shootingPlay": true,
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000000080",
+   "sequenceNumber": "4",
+   "type": {
+    "id": "516",
+    "text": "Stoppage",
+    "abbreviation": "stoppage"
+   },
+   "text": "Icing",
+   "awayScore": 0,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "0:14"
+   },
+   "scoringPlay": false,
+   "scoreValue": 0,
+   "modified": "2026-10-14T02:20Z",
+   "wallclock": "2026-10-13T22:38:55Z",
+   "shootingPlay": true,
+   "coordinate": {
+    "x": -90,
+    "y": 26
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000000770",
+   "sequenceNumber": "17",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Olen Zellweger Goal (1) Snap Shot, assists: Mattias Samuelsson (2), Beck Malenstyn (1)",
+   "awayScore": 1,
+   "homeScore": 0,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "2:16"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "2"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874863",
+      "displayName": "Olen Zellweger",
+      "shortName": "O. Zellweger",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874863.png",
+       "alt": "Olen Zellweger"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4378656",
+      "displayName": "Mattias Samuelsson",
+      "shortName": "M. Samuelsson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4378656.png",
+       "alt": "Mattias Samuelsson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4063240",
+      "displayName": "Beck Malenstyn",
+      "shortName": "B. Malenstyn",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4063240.png",
+       "alt": "Beck Malenstyn"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T22:43:04Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 29,
+    "y": 21
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000002400",
+   "sequenceNumber": "102",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Lane Hutson Goal (1) Snap Shot, assists: Juraj Slafkovský (1), Cole Caufield (1)",
+   "awayScore": 1,
+   "homeScore": 1,
+   "period": {
+    "number": 1,
+    "displayValue": "1st"
+   },
+   "clock": {
+    "displayValue": "14:28"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "5080230",
+      "displayName": "Lane Hutson",
+      "shortName": "L. Hutson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5080230.png",
+       "alt": "Lane Hutson"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "4915349",
+      "displayName": "Juraj Slafkovsky",
+      "shortName": "J. Slafkovsky",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4915349.png",
+       "alt": "Juraj Slafkovsky"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4565236",
+      "displayName": "Cole Caufield",
+      "shortName": "C. Caufield",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565236.png",
+       "alt": "Cole Caufield"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-13T23:11:35Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": -50,
+    "y": 11
+   },
+   "strength": {
+    "id": "702",
+    "text": "Power Play",
+    "abbreviation": "power-play"
+   }
+  },
+  {
+   "id": "401892490000004390",
+   "sequenceNumber": "128",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Cole Caufield Goal (3) Snap Shot, assists: Juraj Slafkovský (2), Nick Suzuki (5)",
+   "awayScore": 1,
+   "homeScore": 2,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "1:19"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4565236",
+      "displayName": "Cole Caufield",
+      "shortName": "C. Caufield",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565236.png",
+       "alt": "Cole Caufield"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    },
+    {
+     "athlete": {
+      "id": "4915349",
+      "displayName": "Juraj Slafkovsky",
+      "shortName": "J. Slafkovsky",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4915349.png",
+       "alt": "Juraj Slafkovsky"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    },
+    {
+     "athlete": {
+      "id": "4233594",
+      "displayName": "Nick Suzuki",
+      "shortName": "N. Suzuki",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233594.png",
+       "alt": "Nick Suzuki"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    }
+   ],
+   "wallclock": "2026-10-13T23:40:15Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 67,
+    "y": 21
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000006500",
+   "sequenceNumber": "208",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Josh Anderson Goal (2) Snap Shot, assists: Lane Hutson (5), Zachary Bolduc (1)",
+   "awayScore": 1,
+   "homeScore": 3,
+   "period": {
+    "number": 2,
+    "displayValue": "2nd"
+   },
+   "clock": {
+    "displayValue": "19:10"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "3069687",
+      "displayName": "Josh Anderson",
+      "shortName": "J. Anderson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3069687.png",
+       "alt": "Josh Anderson"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5080230",
+      "displayName": "Lane Hutson",
+      "shortName": "L. Hutson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5080230.png",
+       "alt": "Lane Hutson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 5
+    },
+    {
+     "athlete": {
+      "id": "4874734",
+      "displayName": "Zack Bolduc",
+      "shortName": "Z. Bolduc",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874734.png",
+       "alt": "Zack Bolduc"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    }
+   ],
+   "wallclock": "2026-10-14T00:13:53Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 70,
+    "y": 22
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000007150",
+   "sequenceNumber": "233",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Josh Norris Goal (1) Snap Shot, assists: Dennis Gilbert (1), Beck Malenstyn (2)",
+   "awayScore": 2,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "4:24"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "2"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4233627",
+      "displayName": "Josh Norris",
+      "shortName": "J. Norris",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233627.png",
+       "alt": "Josh Norris"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 1
+    },
+    {
+     "athlete": {
+      "id": "3942030",
+      "displayName": "Dennis Gilbert",
+      "shortName": "D. Gilbert",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/3942030.png",
+       "alt": "Dennis Gilbert"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 1
+    },
+    {
+     "athlete": {
+      "id": "4063240",
+      "displayName": "Beck Malenstyn",
+      "shortName": "B. Malenstyn",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4063240.png",
+       "alt": "Beck Malenstyn"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 2
+    }
+   ],
+   "wallclock": "2026-10-14T00:40:21Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 30,
+    "y": 2
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000007250",
+   "sequenceNumber": "239",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Olen Zellweger Goal (2) Snap Shot, assists: Zach Benson (3), Mattias Samuelsson (3)",
+   "awayScore": 3,
+   "homeScore": 3,
+   "period": {
+    "number": 3,
+    "displayValue": "3rd"
+   },
+   "clock": {
+    "displayValue": "5:25"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "2"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874863",
+      "displayName": "Olen Zellweger",
+      "shortName": "O. Zellweger",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874863.png",
+       "alt": "Olen Zellweger"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 2
+    },
+    {
+     "athlete": {
+      "id": "5149186",
+      "displayName": "Zach Benson",
+      "shortName": "Z. Benson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/5149186.png",
+       "alt": "Zach Benson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    },
+    {
+     "athlete": {
+      "id": "4378656",
+      "displayName": "Mattias Samuelsson",
+      "shortName": "M. Samuelsson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4378656.png",
+       "alt": "Mattias Samuelsson"
+      }
+     },
+     "type": "assister",
+     "ytdAssists": 3
+    }
+   ],
+   "wallclock": "2026-10-14T00:42:06Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "901",
+    "text": "None",
+    "abbreviation": "regular"
+   },
+   "coordinate": {
+    "x": 30,
+    "y": 11
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000008040",
+   "sequenceNumber": "332",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Cole Caufield Goal Snap Shot",
+   "awayScore": 1,
+   "homeScore": 3,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4565236",
+      "displayName": "Cole Caufield",
+      "shortName": "C. Caufield",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4565236.png",
+       "alt": "Cole Caufield"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    }
+   ],
+   "wallclock": "2026-10-14T01:24:30Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": -75,
+    "y": 6
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000002980",
+   "sequenceNumber": "333",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Tage Thompson Goal Snap Shot",
+   "awayScore": 1,
+   "homeScore": 3,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "2"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4024988",
+      "displayName": "Tage Thompson",
+      "shortName": "T. Thompson",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4024988.png",
+       "alt": "Tage Thompson"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 4
+    }
+   ],
+   "wallclock": "2026-10-14T01:24:59Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": 74,
+    "y": 3
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000008050",
+   "sequenceNumber": "334",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Alexandre Texier Goal Snap Shot",
+   "awayScore": 1,
+   "homeScore": 3,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4233880",
+      "displayName": "Alexandre Texier",
+      "shortName": "A. Texier",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4233880.png",
+       "alt": "Alexandre Texier"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 0
+    }
+   ],
+   "wallclock": "2026-10-14T01:25:28Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": -72,
+    "y": 7
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  },
+  {
+   "id": "401892490000008060",
+   "sequenceNumber": "336",
+   "type": {
+    "id": "505",
+    "text": "Goal",
+    "abbreviation": "goal"
+   },
+   "text": "Zachary Bolduc Goal Backhand",
+   "awayScore": 1,
+   "homeScore": 3,
+   "period": {
+    "number": 5,
+    "displayValue": "SO"
+   },
+   "clock": {
+    "displayValue": "0:00"
+   },
+   "scoringPlay": true,
+   "scoreValue": 1,
+   "modified": "2026-10-14T02:21Z",
+   "team": {
+    "id": "10"
+   },
+   "participants": [
+    {
+     "athlete": {
+      "id": "4874734",
+      "displayName": "Zack Bolduc",
+      "shortName": "Z. Bolduc",
+      "headshot": {
+       "href": "https://a.espncdn.com/i/headshots/nhl/players/full/4874734.png",
+       "alt": "Zack Bolduc"
+      }
+     },
+     "type": "scorer",
+     "ytdGoals": 3
+    }
+   ],
+   "wallclock": "2026-10-14T01:26:21Z",
+   "shootingPlay": true,
+   "shotInfo": {
+    "id": "905",
+    "text": "Shootout"
+   },
+   "coordinate": {
+    "x": -81,
+    "y": 1
+   },
+   "strength": {
+    "id": "701",
+    "text": "Even Strength",
+    "abbreviation": "even-strength"
+   }
+  }
+ ]
+}
